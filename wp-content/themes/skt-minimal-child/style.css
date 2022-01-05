@@ -1,0 +1,35 @@
+/*
+Theme Name:   Cinesky Theme
+Theme URI:    http://sprowtown.com
+Description:  Cinesky theme custom for sprowtown website
+Author:   	Sarah Beagle
+Author URI:   http://sarahbeagle.com
+Template: 	skt-minimal
+Version:      1.0.0
+Tags:   two-columns,right-sidebar,full-width-template,custom-background,custom-colors,custom-menu,sticky-post,theme-options,threaded-comments,featured-images,footer-widgets,translation-ready,rtl-language-support,custom-logo,editor-style,custom-header,portfolio  	
+Text Domain:  cinesky-theme
+
+Cinesky Theme is based on SKT Minimal theme(SKT Minimal 2021 is distributed under the terms of the GNU GPL v2 or later).
+
+*/
+
+
+/* ---- HEADER  ----*/
+
+.header {
+    background-color: white;
+}
+
+.main-navigation ul li.current-menu-item a, .main-navigation ul li.current_page_item a {
+    opacity: 1;
+    color: #E53567;
+}
+
+.main-navigation ul li:hover a, .main-navigation ul li a:focus, .main-navigation ul li a:hover, .main-navigation ul li.current-menu-item a,  .main-navigation ul li.current_page_item a {
+	opacity: 1;
+	color: #E53567;
+}
+
+.is-style-rounded {
+    border-radius: 50%;
+}
