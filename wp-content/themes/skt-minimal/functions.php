@@ -34,7 +34,9 @@ function skt_minimal_setup() {
 		'flex-height' => true,
 	) );	
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary Menu', 'skt-minimal' )			
+		'primary' => esc_html__( 'Primary Menu', 'skt-minimal' ),	
+		'footer-menu'  => __( 'Footer Menu', 'cinesky' ),	
+		'gear-subsection' => __( 'Gear Sections', 'cinesky'),	
 	) );
 	add_theme_support( 'custom-background', array(
 		'default-color' => 'ffffff'

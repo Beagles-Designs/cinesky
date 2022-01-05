@@ -11,7 +11,15 @@ Text Domain:  cinesky-theme
 
 Cinesky Theme is based on SKT Minimal theme(SKT Minimal 2021 is distributed under the terms of the GNU GPL v2 or later).
 
-*/
+/*  ------ General Page Settings ------ */
+
+.page-header, .site-content, #navigation, .site-footer {
+   width: 90%;
+   max-width: 960px;
+   margin: 0 auto;
+  }
+
+
 
 
 /* ---- HEADER  ----*/
@@ -32,4 +40,10 @@ Cinesky Theme is based on SKT Minimal theme(SKT Minimal 2021 is distributed unde
 
 .is-style-rounded {
     border-radius: 50%;
+}
+
+/*---------- HomePage Hero Content ------------*/
+
+div.homepage-hero-container {
+    
 }
