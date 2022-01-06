@@ -16,12 +16,9 @@ get_header(); ?>
 
     <div id="primary" class="home-page hero-content">
         <div class="main-content" role="main">
-            <?php while ( have_posts()) : the_post();      
-                $heroimage = get_field('homepage_hero_image');
-                $size = "full";
-            ?>    
+            <?php while ( have_posts()) : the_post();  ?>    
                 <h1>Adding Unparalleled Production Value with Every Shot</h1>
-                <div class="homepage-hero-container" style='background-image:url("<?php echo wp_get_attachment_image($heroimage, $size); ?>")'>
+                <div class="homepage-hero-container" style='background-image:url("<?php echo wp_get_attachment_image('homepage_hero_image'); ?>")'>
                     <div class="homepage-headline-container">
                         <h2>To craft shots that compel and engage;</br>to surpass expectations</h2>
                         <a class="quote-contact" href="mailto:sarah.e.beagle@gmail.com?subject=Interested Production for a Cinesky Quote">Email us for a Quote Today</a>

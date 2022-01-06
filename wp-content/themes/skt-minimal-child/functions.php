@@ -66,5 +66,18 @@ function create_custom_post_types() {
         )
     );
 
+    register_post_type( 'past_projects',
+        array(
+            'labels' => array(
+                'name' => __( 'Past Projects' ),
+                'singular_name' => __( 'Past Projects' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array( 'slug' => 'past-projects' ),
+        )
+    );
+
+
 }
 add_action( 'init', 'create_custom_post_types' );

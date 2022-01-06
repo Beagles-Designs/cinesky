@@ -25,9 +25,11 @@ get_header(); ?>
                     <?php while ( have_posts() ) : the_post(); 
                         $specs = get_field('homepage_specs');
                         $title = get_field('gear_page_crane_title');
+                        $popupclass = get_field('popup_class');
                          ?>
                             <li class="crane-type-individual">
-                                <h2><a class="crane-title" href="<?php the_permalink(); ?>"><?php echo($title); ?></a></h2>         
+                                <button class="crane-title <?php echo $popupclass; ?>"><?php echo $title; ?></button>
+                                <?php the_content(); ?>        
                             </li>
                     <?php endwhile; // end of the loop. ?>
                 </ul>
