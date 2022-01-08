@@ -19,7 +19,10 @@ Cinesky Theme is based on SKT Minimal theme(SKT Minimal 2021 is distributed unde
    margin: 0 auto;
   }
 
-
+.main-content {
+    width: 100%;
+    max-width: 1300px;
+}
 
 
 /* ---- HEADER  ----*/
@@ -46,4 +49,10 @@ Cinesky Theme is based on SKT Minimal theme(SKT Minimal 2021 is distributed unde
 
 div.homepage-hero-container {
     
+}
+
+/*---------- Gear PopUp Styles ------------*/
+
+p.crane-tagline {
+    color: pink;
 }
