@@ -32,8 +32,9 @@
     width: 100%;
     padding: 0;
     position: relative!important;
-    background-color: #fbeee8!important;
+    background-color: red!important;
   }
+
   .logo {
     float: none;
     text-align: center;
