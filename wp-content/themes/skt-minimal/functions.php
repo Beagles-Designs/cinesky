@@ -121,7 +121,7 @@ function skt_minimal_font_url(){
 function skt_minimal_scripts() {
 	if ( !is_rtl() ) {
 		wp_enqueue_style( 'skt-minimal-basic-style', get_stylesheet_uri() );
-		wp_enqueue_style( 'skt-minimal-main-style', get_template_directory_uri()."/css/responsive.css" );		
+		/*wp_enqueue_style( 'skt-minimal-main-style', get_template_directory_uri()."/css/responsive.css" );*/		
 	}
 	if ( is_rtl() ) {
 		wp_enqueue_style( 'skt-minimal-rtl', get_template_directory_uri() . "/rtl.css");

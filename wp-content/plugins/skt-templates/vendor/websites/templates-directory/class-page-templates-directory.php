@@ -213,6 +213,15 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 			);
 			
 			$gutenberg_templates_list = array(
+			'sktdoctor-gutenberg'              => array(
+					'title'       => __( 'GB SKT Doctor', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('https://www.sktthemes.org/shop/medical-clinic-wordpress-theme/'),
+					'demo_url'    => esc_url('https://demosktthemes.com/free/skt-doctor/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/skt-doctor/skt-doctor.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/skt-doctor/skt-doctor.json'),
+					'keywords'    => __( ' Gutenberg, gutenberg, hospital, clinic, healthcare, pharmacy, medical store, science, lab, drug, medication, veterinary, maternity, healer, general physician, therapist, orthopaedic, eye clinic, pathology, dermatologist, gynecologist, ambulance, physiotherapy, health consultant, pediatrician, psychologist, dentist, nurse, weight loss, health care centre' ),
+			),	
 			'gbrenovate-gutenberg'              => array(
 					'title'       => __( 'GB Renovate', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
@@ -324,17 +333,124 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 				'import_file'      => '',
 				'required_plugins' => array( 'elementor' => array( 'title' => __( 'Elementor Page Builder', 'skt-templates' ) ) ),
 			);
-
 			$templates_list = array(
-				'saturnwp-elementor'              => array(
-					'title'       => __( 'SaturnWP', 'skt-templates' ),
+				'weddingcardshome-elementor'              => array(
+					'title'       => __( 'Wedding Cards Home', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
-					'theme_url'   => esc_url('#'),
-					'demo_url'    => esc_url('https://demosktthemes.com/free/saturnwp/'),
-					'screenshot'  => esc_url('https://demosktthemes.com/free/saturnwp/saturnwp.jpg'),
-					'import_file' => esc_url('https://demosktthemes.com/free/saturnwp/saturnwp.json'),
-					'keywords'    => __( ' digital-agency, agency, online, digital, consulting, corporate, business, small business, b2b, b2c, financial, investment, portfolio, management, discussion, advice, solicitor, lawyer, attorney, legal, help, SEO, SMO, social', 'skt-templates' ),
-				),			
+					'theme_url'   => esc_url('https://demosktthemes.com/free/wedding-cards/'),					
+					'demo_url'    => esc_url('https://demosktthemes.com/free/wedding-cards/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/wedding-cards/wedding-cards-home.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/wedding-cards/wedding-cards-home.json'),
+					'keywords'    => __( ' wedding, invitation cards, wedding cards, birthday cards, celebration, solicitation, invite, wedding invitation, wedding planner, bride, groom, marriage, announcement, events, wedding venue, romantic cards, greeting cards, rustic card, floral canopy, customized cards', 'skt-templates' ),
+				),	
+				'weddingcardsabout-elementor'              => array(
+					'title'       => __( 'Wedding Cards About', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('https://demosktthemes.com/free/wedding-cards/about/'),					
+					'demo_url'    => esc_url('https://demosktthemes.com/free/wedding-cards/about/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/wedding-cards/wedding-cards-about.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/wedding-cards/wedding-cards-about.json'),
+					'keywords'    => __( ' wedding, invitation cards, wedding cards, birthday cards, celebration, solicitation, invite, wedding invitation, wedding planner, bride, groom, marriage, announcement, events, wedding venue, romantic cards, greeting cards, rustic card, floral canopy, customized cards', 'skt-templates' ),
+				),	
+				'weddingcards-elementor'              => array(
+					'title'       => __( 'Wedding Cards', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('https://demosktthemes.com/free/wedding-cards/wedding-cards/'),					
+					'demo_url'    => esc_url('https://demosktthemes.com/free/wedding-cards/wedding-cards/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/wedding-cards/wedding-cards.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/wedding-cards/wedding-cards.json'),
+					'keywords'    => __( ' wedding, invitation cards, wedding cards, birthday cards, celebration, solicitation, invite, wedding invitation, wedding planner, bride, groom, marriage, announcement, events, wedding venue, romantic cards, greeting cards, rustic card, floral canopy, customized cards', 'skt-templates' ),
+				),		
+				'weddingcardscontact-elementor'              => array(
+					'title'       => __( 'Wedding Cards Contact', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('https://demosktthemes.com/free/wedding-cards/contact/'),					
+					'demo_url'    => esc_url('https://demosktthemes.com/free/wedding-cards/contact/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/wedding-cards/wedding-cards-contact.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/wedding-cards/wedding-cards-contact.json'),
+					'keywords'    => __( ' wedding, invitation cards, wedding cards, birthday cards, celebration, solicitation, invite, wedding invitation, wedding planner, bride, groom, marriage, announcement, events, wedding venue, romantic cards, greeting cards, rustic card, floral canopy, customized cards', 'skt-templates' ),
+				),											
+				'mechanichome-elementor'              => array(
+					'title'       => __( 'Mechanic Home', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('https://demosktthemes.com/free/mechanic/'),					
+					'demo_url'    => esc_url('https://demosktthemes.com/free/mechanic/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/mechanic/mechanic-home.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/mechanic/mechanic-home.json'),
+					'keywords'    => __( ' repair, mechanic, auto repair, services, maintenance, wheels alignment, engine service, autocar, car wash, auto painting, tires shop, auto care, auto mechanic, serviceman, tire dealers, car garage, mechanic workshops, car service, inspection, truck owner, automobile garages, mechanic shop, ', 'skt-templates' ),
+				),
+				'mechanicabout-elementor'              => array(
+					'title'       => __( 'Mechanic About', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('https://demosktthemes.com/free/mechanic/about/'),					
+					'demo_url'    => esc_url('https://demosktthemes.com/free/mechanic/about/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/mechanic/mechanic-about.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/mechanic/mechanic-about.json'),
+					'keywords'    => __( ' repair, mechanic, auto repair, services, maintenance, wheels alignment, engine service, autocar, car wash, auto painting, tires shop, auto care, auto mechanic, serviceman, tire dealers, car garage, mechanic workshops, car service, inspection, truck owner, automobile garages, mechanic shop', 'skt-templates' ),
+				),
+				'mechanicservices-elementor'              => array(
+					'title'       => __( 'Mechanic Services', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('https://demosktthemes.com/free/mechanic/services/'),					
+					'demo_url'    => esc_url('https://demosktthemes.com/free/mechanic/services/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/mechanic/mechanic-services.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/mechanic/mechanic-services.json'),
+					'keywords'    => __( ' repair, mechanic, auto repair, services, maintenance, wheels alignment, engine service, autocar, car wash, auto painting, tires shop, auto care, auto mechanic, serviceman, tire dealers, car garage, mechanic workshops, car service, inspection, truck owner, automobile garages, mechanic shop', 'skt-templates' ),
+				),
+				'mechaniccontact-elementor'              => array(
+					'title'       => __( 'Mechanic Contact', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('https://demosktthemes.com/free/mechanic/contact/'),					
+					'demo_url'    => esc_url('https://demosktthemes.com/free/mechanic/contact/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/mechanic/mechanic-contact.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/mechanic/mechanic-contact.json'),
+					'keywords'    => __( ' repair, mechanic, auto repair, services, maintenance, wheels alignment, engine service, autocar, car wash, auto painting, tires shop, auto care, auto mechanic, serviceman, tire dealers, car garage, mechanic workshops, car service, inspection, truck owner, automobile garages, mechanic shop', 'skt-templates' ),
+				),															
+				'extremesportshome-elementor'              => array(
+					'title'       => __( 'Extreme Sports Home', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('https://demosktthemes.com/free/extreme-sports/'),					
+					'demo_url'    => esc_url('https://demosktthemes.com/free/extreme-sports/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/extreme-sports/extreme-sports-home.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/extreme-sports/extreme-sports-home.json'),
+					'keywords'    => __( ' sports, adventure, hiking, skiing, mountaineering, river rafting, trekking, fun, surfing, climbing, exciting, adrenalin rush, camping', 'skt-templates' ),
+				),	
+				'extremesportsabout-elementor'              => array(
+					'title'       => __( 'Extreme Sports About', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('https://demosktthemes.com/free/extreme-sports/about/'),					
+					'demo_url'    => esc_url('https://demosktthemes.com/free/extreme-sports/about/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/extreme-sports/extreme-sports-about.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/extreme-sports/extreme-sports-about.json'),
+					'keywords'    => __( ' sports, adventure, hiking, skiing, mountaineering, river rafting, trekking, fun, surfing, climbing, exciting, adrenalin rush, camping', 'skt-templates' ),
+				),	
+				'extremesportsactivities-elementor'              => array(
+					'title'       => __( 'Extreme Sports Activities', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('https://demosktthemes.com/free/extreme-sports/activities/'),					
+					'demo_url'    => esc_url('https://demosktthemes.com/free/extreme-sports/activities/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/extreme-sports/extreme-sports-activities.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/extreme-sports/extreme-sports-activities.json'),
+					'keywords'    => __( ' sports, adventure, hiking, skiing, mountaineering, river rafting, trekking, fun, surfing, climbing, exciting, adrenalin rush, camping', 'skt-templates' ),
+				),	
+				'extremesportscontact-elementor'              => array(
+					'title'       => __( 'Extreme Sports Contact', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('https://demosktthemes.com/free/extreme-sports/contact/'),					
+					'demo_url'    => esc_url('https://demosktthemes.com/free/extreme-sports/contact/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/extreme-sports/extreme-sports-contact.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/extreme-sports/extreme-sports-contact.json'),
+					'keywords'    => __( ' sports, adventure, hiking, skiing, mountaineering, river rafting, trekking, fun, surfing, climbing, exciting, adrenalin rush, camping', 'skt-templates' ),
+				),													
+				'sktmosque-elementor'              => array(
+					'title'       => __( 'SKT Mosque', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('https://demosktthemes.com/free/mosque/'),					
+					'demo_url'    => esc_url('https://demosktthemes.com/free/mosque/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/mosque/skt-mosque.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/mosque/skt-mosque.json'),
+					'keywords'    => __( ' mosque, masjid, prayers, offerings, donation, charity, NGO, kids learning centre, meditation, nonprofit, fundraising, foster home, caretaker, Humanitarian, food trust, welfare schemes, volunteer programs, relief fund, church, disaster, peace, amnesty, blood donation camps, child education', 'skt-templates' ),
+				),		
 				'posterity-elementor'              => array(
 					'title'       => __( 'Posterity', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
@@ -352,6 +468,24 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 					'screenshot'  => esc_url('https://demosktthemes.com/free/posterity-dark/posterity-dark.jpg'),
 					'import_file' => esc_url('https://demosktthemes.com/free/posterity-dark/posterity-dark.json'),
 					'keywords'    => __( ' posteriy, posteriydark, dark, multipurpose, pet, dogs, chocolate, food, recipe, corporate, construction, real estate, charity, trust, car, automobile, hair, industry, factory, consulting, office, accounting, computers, cafe, fitness, gym, architect, interior' ),
+				),
+				'sktminimal-elementor'              => array(
+					'title'       => __( 'Minimal', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('https://demosktthemes.com/free/minimal/'),					
+					'demo_url'    => esc_url('https://demosktthemes.com/free/minimal/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/minimal/skt-minimal.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/minimal/skt-minimal.json'),
+					'keywords'    => __( ' minimal, minimalistic, eCommerce, store, shop, furniture, chair, ceramic materials, baked clay, equipment, tools, apparatus, utensils, electronic devices, home decor, lighting, gear, makeovers, decorating, decoration, consumer goods, crockery, stoneware, art, earthenware, ceramic, clay ware, ware, ceramic ware, potteries', 'skt-templates' ),
+				),				
+				'saturnwp-elementor'              => array(
+					'title'       => __( 'SaturnWP', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('#'),
+					'demo_url'    => esc_url('https://demosktthemes.com/free/saturnwp/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/saturnwp/saturnwp.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/saturnwp/saturnwp.json'),
+					'keywords'    => __( ' digital-agency, agency, online, digital, consulting, corporate, business, small business, b2b, b2c, financial, investment, portfolio, management, discussion, advice, solicitor, lawyer, attorney, legal, help, SEO, SMO, social', 'skt-templates' ),
 				),	
 				'sktgreen-elementor'              => array(
 					'title'       => __( 'SKT Green', 'skt-templates' ),
@@ -361,15 +495,6 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 					'screenshot'  => esc_url('https://demosktthemes.com/free/natureone/free-natureone.jpg'),
 					'import_file' => esc_url('https://demosktthemes.com/free/natureone/free-natureone.json'),
 					'keywords'    => __( ' nature, green, conservation, solar, eco-friendly, renewable, biofuel electricity, recycle, natural resource, pollution free, water heating, sun, power, geothermal, hydro, wind energy, environment, earth, farm, agriculture', 'skt-templates' ),
-				),	
-				'sktminimal-elementor'              => array(
-					'title'       => __( 'Minimal', 'skt-templates' ),
-					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
-					'theme_url'   => esc_url('https://demosktthemes.com/free/minimal/'),					
-					'demo_url'    => esc_url('https://demosktthemes.com/free/minimal/'),
-					'screenshot'  => esc_url('https://demosktthemes.com/free/minimal/skt-minimal.jpg'),
-					'import_file' => esc_url('https://demosktthemes.com/free/minimal/skt-minimal.json'),
-					'keywords'    => __( ' minimal, minimalistic, eCommerce, store, shop, furniture, chair, ceramic materials, baked clay, equipment, tools, apparatus, utensils, electronic devices, home decor, lighting, gear, makeovers, decorating, decoration, consumer goods, crockery, stoneware, art, earthenware, ceramic, clay ware, ware, ceramic ware, potteries', 'skt-templates' ),
 				),				
 				'comingsoonone-elementor'              => array(
 					'title'       => __( 'Coming Soon One', 'skt-templates' ),
@@ -1866,9 +1991,19 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 				'_elementor_edit_mode' => ! empty( $elementor_edit_mode_meta[0] ) ? $elementor_edit_mode_meta[0] : '',
 				'_elementor_css'       => $elementor_css_meta,
 			);
-
-			// Create post object
-			$new_template_page = array(
+			if($template_name=='Extreme Sports Home' || $template_name=='Extreme Sports About' || $template_name=='Extreme Sports Activities' || $template_name=='Extreme Sports Contact' || $template_name=='Mechanic Home' || $template_name=='Mechanic About' || $template_name=='Mechanic Services' || $template_name=='Mechanic Contact'){
+				$new_template_page = array(
+				'post_type'     => 'page',
+				'post_title'    => $template_name,
+				'post_status'   => 'publish',
+				'post_content'  => $page_content,
+				'meta_input'    => $elementor_metas,
+				'page_template' => apply_filters( 'template_directory_default_template', 'templates/builder-fullwidth.php' )
+			);
+				}
+				else
+				{
+				$new_template_page = array(
 				'post_type'     => 'page',
 				'post_title'    => $template_name,
 				'post_status'   => 'publish',
@@ -1876,6 +2011,7 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 				'meta_input'    => $elementor_metas,
 				'page_template' => apply_filters( 'template_directory_default_template', 'templates/builder-fullwidth-std.php' )
 			);
+				}
 
 			$post_id = wp_insert_post( $new_template_page );
 			$redirect_url = add_query_arg( array(

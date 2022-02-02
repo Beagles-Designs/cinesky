@@ -2140,3 +2140,345 @@ form.wpsaturn-newsletter-form input[type="submit"]{width: 25%!important; font-si
 .minimal-explore-btn .elementor-button-text::after {content:''; background:#000; width:30px; height:2px; position:absolute; left:0; bottom:-20px; transition:all 0.3s;}
 .minimal-explore-btn .elementor-button-text:hover:after{ width:100%;}
 /* SKT Minimal */
+
+/* SKT Mosque */
+body.elementor-editor-active .skt-mosque-community{margin-bottom:0px !important;}
+.skt-mosque-community .elementor-container{float:right;}
+.skt-mosque-counter .elementor-counter-number-wrapper {width:180px; height:180px; border-radius:100px; border:solid 3px #64a926; line-height:170px !important; margin:0 auto; background:rgba(44, 44, 44, 0.8); margin-bottom:15px;}
+.skt-mosque-video .attachment-full{width:auto !important; max-width:100% !important; float:right;}
+.skt-mosque-pillar-box .elementor-image-box-img{width:195px !important; height:100px !important; background:#64a926; text-align:center; border-radius:100px; padding-top:25px;}
+.skt-mosque-pillar-sec-right{margin-left:-200px !important; width:100% !important;}
+.skt-mosque-services-list-box{background-position: right 40px center;}
+.skt-mosque-progress-bar .elementor-title{display: block; margin-bottom: 5px;}
+.skt-mosque-progress-bar .elementor-title span{float: right;}
+
+@media screen and (max-width: 29.938em) {
+	.skt-mosque-pillar-sec-right {margin-left: 0px !important;}
+	.skt-mosque-pillar-box .elementor-image-box-img{width:150px !important; height:150px !important; padding-top:45px; margin-bottom:20px !important;}
+	.skt-mosque-video .attachment-full {width:80% !important;}
+}
+
+@media screen and (max-width:47.938em) and (min-width:30.000em) {
+	.skt-mosque-pillar-sec-right {margin-left:0px !important;}
+	.skt-mosque-pillar-box .elementor-image-box-img{width:150px !important; height:150px !important; padding-top: 45px; margin-bottom:20px !important;}
+	.skt-mosque-video .attachment-full {width: auto !important; float: none; margin: 0 auto;}
+	.skt-mosque-community .elementor-container {width:100% !important; max-width:100% !important;}
+	.skt-mosque-pillar-sec .elementor-heading-title {padding:0px 150px !important;}
+}
+
+@media screen and (max-width:63.938em) and (min-width:48.000em) {
+	.skt-mosque-counter .elementor-counter-number-wrapper{ width:120px !important; height:120px !important; line-height:110px !important;}
+	.skt-mosque-community .elementor-container.elementor-column-gap-default {width:430px !important; max-width:430px !important;}
+	.skt-mosque-pillar-sec-right {margin-left:0px !important;}
+	.skt-mosque-progress-bar .elementor-title span{float:none !important; margin-left:50px !important;}	
+}
+/* SKT Mosque */
+
+/* Extreme Sports */
+.extreme-sports-header-section-menu ul {list-style: none;text-align: center; margin:0; padding:0;}
+.extreme-sports-header-section-menu ul li {display: inline-block; padding: 0 20px;}
+.extreme-sports-header-section-menu ul li a {color:#fff;text-decoration: none !important;font-size: 24px;font-weight: 300;}
+.extreme-sports-header-section-menu .current_page_item a:active {color:#ff5301;border-bottom: 1px solid #ff5301;
+padding-bottom:10px !important; transition: 0.3s;}
+.extreme-sports-header-section-menu ul li a:hover, .extreme-sports-header-section-menu ul li.current_page_item a, .extreme-sports-header-section-menu ul li.current-menu-item a{color:#ff5301;border-bottom: 1px solid #ff5301; padding-bottom:10px !important; transition: 0.3s;}
+.extreme-sports-header-button .elementor-button-link{padding:15px 40px !important;}
+.extreme-sports-header-button a{text-decoration: none;}
+.extreme-sports-camping-section:hover{background-color:#ff5301;border-radius:8px;}        
+.extreme-sports-camping-section {box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);}
+.extreme-sports-camping-section .elementor-widget-wrap:hover{filter: brightness(0) invert(1);}
+.extreme-sports-camping-section{background-color:#fff;border-radius:8px; margin: 15px;}
+.extreme-sports-activites-section img:hover {opacity: 0.3; position: relative;}
+.extreme-sports-activites-section h2:hover {transition: all .3s ease-in-out;bottom: 50% !important;}
+.extreme-sports-reasons-to-join-section {background-color:#fff;border-radius:50%; margin: 15px;width: 180px !important;height: 180px;}
+.extreme-sports-reasons-to-join-section {box-shadow: 0px 6px 42px -25px rgb(0 0 0 / 50%);}
+.extreme-sports-reasons-to-join-section .elementor-widget-container:hover{filter: brightness(0) invert(1);}
+.extreme-sports-reasons-to-join-section:hover{background-color:#ff5301;border-radius:50%;}
+.extreme-sports-reasons-to-join-section img:hover{filter: brightness(0) invert(1);}
+.extreme-sports-reasons-to-join-section img {margin: 45px;}
+.extreme-sports-footer-section a:hover {text-decoration: none !important;} 
+.extreme-sports-activities-mountain-biking .elementor-widget-container .elementor-heading-title a:hover {text-decoration: none !important;}
+.extreme-sports-activities-mountain-biking .elementor-widget-container .elementor-heading-title a {    font-weight: 400 !important;}
+.extreme-sports-activities-mountain-biking:hover {top:60px;}
+.extreme-sports-video-section .elementor-custom-embed-play {background: #ff5301;border-radius: 50%;}
+.extreme-sports-video-section .elementor-widget-container img {width:100% !important; max-width:inherit !important;}
+.extreme-sports-about-page-video .elementor-custom-embed-play {background: #ff5301;border-radius: 50%;    top: 70%;left:0% !important;}
+.extreme-sports-about-page-video .elementor-widget-container {overflow: visible !important;}
+.extreme-imageover{transition: background-color 0.5s ease;}
+.extreme-imageover .elementor-widget-image{margin:0;}
+.extreme-imageover .elementor-widget-heading{height: 100%;position: absolute;transition: background-color 0.5s ease;}
+.extreme-imageover .elementor-heading-title{position: absolute;width: 100%;bottom: 13%;transition: background-color 0.5s ease;}
+.extreme-imageover:hover .elementor-widget-heading{background: rgb(241 113 4 / 85%) !important;cursor: pointer;border-radius: 12px;}
+.extreme-imageover:hover .elementor-heading-title{bottom: 40%  !important;}
+.extreme-sports-club-activities .elementor-widget-image a {display:unset !important;}
+.extreme-sports-club-activities .elementor-widget-image a img {width:100% !important; max-width:inherit !important;}
+.extreme-imageover .elementor-heading-title a {text-decoration: none !important;font-weight: 400 !important;}
+.extreme-sports-video-link a {text-decoration: none !important;font-weight: 400 !important;}
+@media (max-width: 768px){
+    .extreme-sports-header-section-menu ul li a {font-size: 20px;}
+	.extreme-sports-header-section-menu ul li {padding:0 18px;}
+}
+@media (max-width: 375px){
+    .extreme-sports-header-section-menu ul li a {font-size: 20px;}
+	.extreme-sports-header-section-menu ul li {padding:0 10px;}
+	.extreme-sports-header-section-menu ul {margin-left: 0 !important; text-align: left;}
+	.extreme-sports-about-page-video .elementor-custom-embed-play {background: #ff5301;border-radius: 50%;    top: 50%;left:50% !important;}
+	
+}
+/* Extreme Sports */
+
+/* Mechanic */
+.mechanic-top-bar {width: 100% !important;max-width: 1050px;margin: 0 auto;}
+.mechanic-menu-link ul li a:active { color:#2f6aec !important;}
+.mechanic-top-logo-section {width: 100% !important;max-width: 1130px;margin: 0 auto;border-radius: 15px;}
+.mechanic-top-logo-section a:hover {text-decoration:none;}
+.mechanic-navigation-button .elementor-button-link {padding: 15px 30px 15px 30px !important;}
+.mechanic-banner-button .elementor-button-link {padding: 25px 45px 25px 45px !important; text-decoration:none;}
+.mechanic-auto-repair-section .elementor-heading-title {background: #2f6aec;width: 100%;max-width: 233px;    margin: 0 auto;position: absolute;top: -430px !important;right:-72px;transform: rotate(-90deg);padding: 20px 15px;}
+.mechanic-auto-repair-blow .elementor-button-link {padding: 20px 45px 20px 45px !important;text-decoration:none;}
+.mechanic-our-benefit-bar .elementor-progress-wrapper {margin-top: 10px;}
+.mechanic-our-benefit-bar .elementor-progress-percentage {position: absolute;top: -27px;left: auto;right: 0;}
+.mechanic-our-benefit-bar-img:after {content: "";background: #f3f3f3;height: 500px;position: absolute;left: auto;right:-17px;top: 9%;width: 100%;border-radius: 0px 12px 12px 0px;max-width: 11%; z-index: -1;}
+.mechanic-our-benefit-bar-img {position: relative;}
+.mechanic-questions-feel-section {position: absolute !important;top: -150px;left: 0px;}
+.mechanic-our-service-img-blow {position: absolute !important;top: -360px;left: 0px;padding: 20px 33px;background:#E81C2E;z-index: 6;}
+.mechanic-most-trusted-car-section {background: #fff;width: 120px !important;height: 120px;border-radius:100px;}
+.mechanic-most-trusted-car-section .elementor-counter-number-wrapper {margin-top: 40px;}
+.mechanic-video-section .elementor-custom-embed-play {background: #e81c2e;top: 100%;left: 79% !important;  padding: 45px 57px;}
+.mechanic-video-section .elementor-widget-container {overflow: visible !important;}
+.mechanic-video-section .eicon-play:before{content: ""; background:url(https://demosktthemes.com/free/mechanic/video-play-icon.png); width:20px; height:33px; display:inline-block;}
+.mechanic-video-section i {margin-top: -45px !important;}
+.mechanic-video-text {background: #fff;width: 100% !important;max-width: 240px;margin: 0 auto;left: 1px;padding: 27px 35px;top: -20px;}
+.mechanic-work-process-section{position: absolute !important;top: 100px;left: 52.5%;width: 100% !important;max-width:532px;}
+.mechanic-feedback-left:before {content: "";background:#e81c2e;height: 350px;position: absolute;left: -79px;top: 25%;width: 100%;max-width: 41%;}
+.mechanic-footer-links a:hover {text-decoration:none;}
+.mechanic-footer-opening-hours-first {width: 100%;max-width: 120px;display: inline-block;}
+.mechanic-footer-opening-hours-second {width: 100%;max-width: 150px;display: inline-block;margin-left: 15px;}
+
+
+@media screen and (min-width: 768px) and (max-width:1023px){
+.mechanic-top-bar {max-width: 680px;}
+.mechanic-navigation-button .elementor-button-link {padding: 18px 15px 18px 15px !important;}
+.mechanic-banner-button .elementor-button-link {padding: 20px 40px 20px 40px !important;}
+.mechanic-auto-repair-section .elementor-heading-title {top: -331px !important;right: -93px;}
+.mechanic-our-benefit-bar .elementor-progress-percentage {left:284px;}
+.mechanic-our-benefit-bar-img:after {right: -42px;top: 67px;height: 390px;}
+.mechanic-most-trusted-car-section {width: 80px !important;height: 80px;}
+.mechanic-most-trusted-car-section .elementor-counter-number-wrapper {margin-top:34px;}
+.mechanic-our-service-img-blow {padding: 10px 5px;top: -290px;}
+.mechanic-video-section i {margin-top: -45px !important;}
+.mechanic-video-section .elementor-custom-embed-play {top: 98%;left: 59% !important;padding: 35px 57px;}
+.mechanic-video-text {left: -124px;padding: 20px 11px;top: -20px;max-width: 184px;}
+.mechanic-work-process-section {top: 60px;left: 43%;max-width: 423px;}
+.mechanic-most-trusted-car-section {width: 95px !important;height: 95px;}
+}
+@media (max-width: 810px){
+.mechanic-most-trusted-car-section {width: 95px !important;height: 95px;}
+}
+@media (max-width: 767px){
+.mechanic-auto-repair-section .elementor-heading-title {max-width: 78%;top: -85px !important;left: -16px;right: 0;transform: rotate(0deg);}
+.mechanic-most-trusted-car-section {margin: 0 auto;}
+.mechanic-most-trusted-car-section .elementor-counter-number-wrapper {margin-top: 34px;}
+.mechanic-work-process-section {position: relative;top:0px;left: 0;width: 100% !important;max-width: 100%;}
+.mechanic-footer-contact-details.elementor-widget-image-box .elementor-image-box-wrapper {text-align: left !important;}
+.mechanic-our-benefit-bar-img::after {height: 380px;}
+.mechanic-feedback-left::before {top:0;}
+.mechanic-top-bar .elementor-icon-box-icon {display: inline-block;width: 100%;max-width: 20px;}
+.mechanic-top-bar .elementor-icon-box-content {display: inline-block;width: 100%;max-width: 88px;}
+.mechanic-top-bar .elementor-icon-box-wrapper {text-align:left;}
+.mechanic-footer-contact-details .elementor-image-box-img {display: inline-block;width: 100%;max-width:50px;vertical-align: top;}
+.mechanic-footer-contact-details .elementor-image-box-content {display: inline-block;width: 100%;max-width: 200px;}
+}
+@media (max-width: 428px){
+.mechanic-navigation-button .elementor-button-link {padding: 18px 35px 18px 35px !important;}
+.mechanic-banner-button .elementor-button-link {padding: 15px 35px 15px 35px !important;}
+.mechanic-our-service-img-blow {position: relative;top: -21px;right: 0;}
+.mechanic-video-section .elementor-custom-embed-play {top: 50%;left: 50% !important;padding: 9px 28px;}
+.mechanic-video-section i {margin-top: -47px !important;}
+.mechanic-video-section .eicon-play::before {font-size: 25px;}
+.mechanic-feedback-left::before {top: 6%;}
+}
+@media (max-width: 375px){
+.mechanic-navigation-button .elementor-button-link {padding: 18px 35px 18px 35px !important;}
+.mechanic-banner-button .elementor-button-link {padding: 15px 35px 15px 35px !important;}
+.mechanic-our-service-img-blow {position: relative;top: -21px;right: 0;}
+.mechanic-video-section .elementor-custom-embed-play {top: 50%;left: 50% !important;padding: 9px 28px;}
+.mechanic-video-section i {margin-top: -47px !important;}
+.mechanic-video-section .eicon-play::before {font-size: 25px;}
+}
+@media (max-width: 320px){
+.mechanic-footer-opening-hours-first {max-width: 90px;}
+.mechanic-footer-opening-hours-second {max-width: 139px;}
+.mechanic-footer-contact-details.elementor-widget-image-box .elementor-image-box-wrapper {text-align: left !important;}
+.mechanic-top-bar .elementor-icon-box-icon {display: block;width: 100%;max-width: 100%;}
+.mechanic-top-bar .elementor-icon-box-content {display:block;width: 100%;max-width: 100%;text-align: left;}
+.mechanic-top-bar .elementor-icon-box-wrapper {text-align:center;}
+.mechanic-top-bar .elementor-icon-box-icon i {margin-left:-15px;}
+}
+/* Mechanic */
+
+/* SKT Doctor */
+.gb-doctor-section1{z-index: 999 !important;}
+.gb-doctor-section1 .wp-block-image{margin: 0;}
+.gb-doctor-section1 .wp-block-image img{display: block; width: 100%;}
+.gb-doctor-section1 .responsive-columns-inner-wrap .skt-blocks-advanced-column-child:nth-child(2) .skt-blocks-infobox__outer-wrap{position: absolute; right: 0; bottom: 0; height: 299px; width: 300px; display: flex; justify-content: center; align-items: center;}
+.gb-doctor-section1 .responsive-columns-inner-wrap .skt-blocks-advanced-column-child:last-child .skt-blocks-infobox__outer-wrap{display: block; position: static; height: auto; width: auto;}
+.gb-doctor-section2{z-index: 99 !important;}
+.gb-doctor-section2 .responsive-section-wrap{box-shadow: 0px 10px 50px 0px rgba(0,0,0,0.06) !important;}
+.gb-doctor-section4 .wp-block-image{margin: 0;}
+.gb-doctor-section4 .wp-block-image img{display: block;}
+.gb-doctor-section5 .wp-block-image{margin-top: -43px;}
+.gb-doctor-section5 .responsive-column-wrap{overflow: visible;}
+.gb-doctor-section5 .skt-blocks-buttons__wrap .skt-blocks-buttons__outer-wrap{margin-bottom: -32px;}
+.gb-doctor-section6 .responsive-column-wrap{overflow: visible;}
+.gb-doctor-section6-img{display: inline-block; position: relative;}
+.gb-doctor-section7 .responsive-section-wrap{overflow: visible;}
+.gb-doctor-section7 .responsive-section-wrap .responsive-section-inner-wrap{position: static;}
+.gb-doctor-section7 .skt-blocks-buttons__outer-wrap{position: absolute; bottom: 0; bottom: -18px; margin-left: 45px;}
+.gb-doctor-section7 .skt-blocks-buttons__outer-wrap .skt-blocks-button__wrapper .skt-blocks-button__wrapper{padding-right: 140px !important;}
+.gb-doctor-section11 .responsive-section-wrap{overflow: visible;}
+.gb-doctor-section11 .wp-block-image{margin: 0; margin-top: -80px;}
+.gb-doctor-section11 .wp-block-image img{display: block;}
+.gb-doctor-section11 .responsive-column-wrap{overflow: visible;}
+.gb-doctor-section11:after{content: ""; background-color: #0a30ad; position: absolute; top: -90px; right: 45px; height: 130px; width: 130px; z-index: 9; border-radius: 50%;}
+.gb-doctor-section11:before{content: ""; background-color: #1bbde3; position: absolute; top: -50px; right: 130px; height: 92px; width: 92px; z-index: 99; border-radius: 50%;}
+@media screen and (max-width: 29.938em) {
+	.get-button{float:none; margin-top:25px; margin-bottom:25px; margin-right:0px;}
+	.skt-doctor-pillar-sec-right {margin-right: 0px !important;}
+	.skt-doctor-pillar-box .elementor-image-box-img{width:150px !important; height:150px !important; padding-top:45px; margin-bottom:20px !important;}
+	.skt-doctor-video .attachment-full {width:80% !important;}
+	.footer-social{padding: 0 0 25px 0; float:right; text-align:right;}	
+	.footer-logo{ float:none; text-align:center; padding:25px 0;}
+	.gbbarter-home-section1{background-size:100% !important;}
+}
+
+@media screen and (max-width:47.938em) and (min-width:30.000em) {
+	.skt-doctor-pillar-sec-right {margin-right:0px !important;}
+	.skt-doctor-pillar-box .elementor-image-box-img{width:150px !important; height:150px !important; padding-top: 45px; margin-bottom:20px !important;}
+	.skt-doctor-video .attachment-full {width: auto !important; float: none; margin: 0 auto;}
+	.skt-doctor-community .elementor-container {width:100% !important; max-width:100% !important;}
+	.skt-doctor-pillar-sec .elementor-heading-title {padding:0px 150px !important;}
+	.gbbarter-home-section1{background-size:100% !important;}
+}
+
+@media screen and (max-width:63.938em) and (min-width:48.000em) {
+	.skt-doctor-counter .elementor-counter-number-wrapper{ width:120px !important; height:120px !important; line-height:110px !important;}
+	.skt-doctor-community .elementor-container.elementor-column-gap-default {width:430px !important; max-width:430px !important;}
+	.skt-doctor-pillar-sec-right {margin-right:0px !important;}
+	.skt-doctor-progress-bar .elementor-title span{float:none !important; margin-right:50px !important;}	
+}
+/* SKT Doctor */
+
+/* Wedding Cards */
+.wedding-cards-request-quote a:hover{text-decoration: none;}
+.wedding-cards-request-quote .elementor-button-link{padding:19px 30px !important;}
+.wedding-cards-header-button .elementor-button-link{padding:20px 43px !important;} 
+.wedding-cards-header-button a:hover {text-decoration: none;}
+.wedding-cards-navigation ul li a:hover {text-decoration: none;}
+.wedding-cards-example-img {background-image: url("https://demosktthemes.com/free/wedding-cards/wp-content/uploads/2022/01/example-sample-bg.png");background-size: contain;background-position: center center;background-repeat: no-repeat;}
+.wedding-cards-build-number {background-color: #fff;border-radius: 100%;width: 160px !important;height: 160px;margin: 0 auto;box-shadow: 0 0px 40px 1px rgb(0 0 0 / 20%);z-index: 3;}
+.wedding-cards-build-number .elementor-heading-title {margin-top:50px !important;}
+.wedding-cards-build-number ::before {content:url(https://demosktthemes.com/free/wedding-cards/wp-content/uploads/2022/01/arrow-left.png);position: absolute;left: -18px;top: 39%;font-size: 22px;}
+.wedding-cards-pick-a-template ::after {content: "";position: absolute;right: 60px;top: 128px;background: rgb(0,0,0,10%);width: 2px;height: 53px;}
+.wedding-cards-pick-a-template ::before {content:url(https://demosktthemes.com/free/wedding-cards/wp-content/uploads/2022/01/Pick-a-Template-img-1.jpg);position: absolute;right: 60px;top: -50px;z-index: -1;}
+
+.wedding-cards-customize-your-cards ::before {content: "";position: absolute;top: -150px;background: rgb(0,0,0,0%);width: 100%;height: 329px;border-top: 2px solid #dfe2e5;border-right: 2px solid #dfe2e5;left: -239px;border-bottom: 1px solid #dfe2e5;z-index: -1;}
+.wedding-cards-customize-your-cards ::after {content: url(https://demosktthemes.com/free/wedding-cards/wp-content/uploads/2022/01/Customize-Your-Cards-img-1.jpg);position: absolute;left: 195px;top: -53px;z-index: -1;}
+.wedding-cards-build-number-2 ::after {content:url(https://demosktthemes.com/free/wedding-cards/wp-content/uploads/2022/01/arrow-right.png);position: absolute;right: -18px;top: 39%;font-size: 22px;}
+.wedding-cards-build-number-2 {background-color: #fff;border-radius: 100%;width: 160px !important;height: 160px;margin: 0 auto;box-shadow: 0 0px 40px 1px rgb(0 0 0 / 20%);z-index: 3;}
+.wedding-cards-build-number-2 .elementor-heading-title {margin-top:50px !important;}
+.wedding-cards-fill-in-the ::after {content: "";position: absolute;right: -374px;top: -150px;background: rgb(0,0,0,0%);width: 100%;height: 332px;border-left: 2px solid #dfe2e5;border-bottom: 2px solid #dfe2e5;z-index: -1;}
+.wedding-cards-fill-in-the ::before {content:url(https://demosktthemes.com/free/wedding-cards/wp-content/uploads/2022/01/Pick-a-Template-img-1.jpg);position: absolute;right: 60px;top: -50px;z-index: -1;}
+.wedding-cards-cards-ready ::before {content: "";position: absolute;top: -148px;background: rgb(0,0,0,0%);width: 100%;height: 279px;border-right: 2px solid #dfe2e5;left: -239px;z-index: -1;}
+.wedding-cards-cards-ready ::after {content: url(https://demosktthemes.com/free/wedding-cards/wp-content/uploads/2022/01/Customize-Your-Cards-img-1.jpg);position: absolute;left: 180px;top: -53px;z-index: -1;}
+
+.wedding-cards-get-started-button .elementor-button-link{padding:15px 26px !important;} 
+.wedding-cards-get-started-button a:hover {text-decoration: none;}
+.wedding-cards-wedding-invitations {position: absolute !important;left: 55px;top: -60px;}
+.wedding-cards-wedding-announcements {position: absolute !important;right: 0;top: 75px;}
+.wedding-cards-engagement-cards {position: absolute !important;left: 25px;top: 280px;}
+.wedding-cards-popular h3:after {content: "Popular";position: absolute;top: 16px;right: -11px;transform: rotate(45deg);font-size: 13px;font-weight: 600;text-transform: uppercase;color: #000;font-family: "Poppins", Sans-serif;}
+.wedding-cards-footer-link a:hover {text-decoration: none;}
+.elementor-section.elementor-section-boxed > .elementor-container {max-width: 1170px !important;}
+.wedding-cards-wedding-page-link .elementor-button-link {padding: 0px 0px !important;}
+.wedding-cards-wedding-page-link a:hover {text-decoration: none;}
+.wedding-cards-wedding-page-img {position: absolute !important;left: 65px;top: 3px;}
+.wedding-cards-wedding-page-second {position: absolute !important;right: 0;top: 75px;}
+.wedding-cards-wedding-page-img .elementor-widget-image {background:#fff;}
+
+
+/*Responsive*/
+@media screen and (min-width: 1024px) and (max-width:1169px){
+.wedding-cards-pick-a-template ::after {top: 238%;height: 40px;}
+.wedding-cards-pick-a-template ::before {top: -38px;}
+.wedding-cards-customize-your-cards ::before {top: -156px;width: 70%;left: -174px;}
+.wedding-cards-build-number {width: 130px !important;height: 130px;}
+.wedding-cards-build-number-2 {width: 130px !important;height: 130px !important;}
+.wedding-cards-build-number-2 .elementor-heading-title {margin-top: 40px !important;}
+.wedding-cards-customize-your-cards ::before {height: 292px;}
+.wedding-cards-fill-in-the ::after {right: -249px;top: -144px;width: 73%;}
+.wedding-cards-fill-in-the ::before {top: -44px;}
+.wedding-cards-cards-ready ::before {width: 89%;height: 217px;top: -143px;}
+.wedding-cards-cards-ready ::after {top: -94px;}
+.wedding-cards-build-number .elementor-heading-title {margin-top: 40px !important;}
+.wedding-cards-build-number ::before {left: -14px;top: 37%;}
+.wedding-cards-build-number-2 ::after {right: -14px;top: 37%;}
+.wedding-cards-engagement-cards {top:185px;left:0;}
+.wedding-cards-wedding-invitations {top:-95px;left:35px;}
+.wedding-cards-wedding-announcements {right:20px;}
+.wedding-cards-popular h3:after {top: 10px;right: -16px;}
+.wedding-cards-wedding-page-img {left: 25px;top: -30px;}
+.wedding-cards-wedding-page-second {top: 10px;}
+.wedding-cards-customize-your-cards ::after {left: 124px;top: -95px;}
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px){
+.wedding-cards-request-quote .elementor-button-link {padding:15px 35px !important;}
+.wedding-cards-build-number {height: 120px;width:120px !important;}
+.wedding-cards-build-number .elementor-heading-title {margin-top: 35px !important;}
+.wedding-cards-build-number ::before {left: -17px;top: 33%;}
+.wedding-cards-pick-a-template ::before {top: -65px;}
+.wedding-cards-pick-a-template ::after {top: 134%;height: 46px;}
+.wedding-cards-customize-your-cards ::before {width: 70%;left: -156px;}
+.wedding-cards-build-number-2 {width: 120px !important;height: 120px;}
+.wedding-cards-build-number-2 .elementor-heading-title {margin-top:34px !important;}
+.wedding-cards-customize-your-cards ::after {left: 60px;top: -91px;}
+.wedding-cards-customize-your-cards ::before {height: 290px;}
+.wedding-cards-fill-in-the ::after {height: 302px;right: -158px;top: -140px;width: 72%;}
+.wedding-cards-fill-in-the ::before {top: -70px;}
+.wedding-cards-cards-ready ::before {top: -144px;height: 225px;}
+.wedding-cards-cards-ready ::after {left: 66px;top: -107px;}
+.wedding-cards-wedding-invitations {left: 5px;}
+.wedding-cards-wedding-announcements {right: 10px;}
+.wedding-cards-engagement-cards {left: -8px;top: 235px;}
+.wedding-cards-build-number-2 ::after {top: 35%;right: -16px;}
+.wedding-cards-popular h3:after {top: 11px;right: -15px;}
+.wedding-cards-wedding-page-img {left:0;}
+.wedding-cards-wedding-page-second {top: 83px;}
+}
+@media screen and (min-width: 320px) and (max-width:767px){
+.wedding-cards-wedding-invitations {position: relative;left: 0;top: 0;margin-top:20px;}
+.wedding-cards-wedding-announcements {position: relative;left: 0;top: 0;margin-top:20px;}
+.wedding-cards-engagement-cards {position: relative;left: 0;top: 0;margin-top:20px;}
+.wedding-cards-request-quote .elementor-button-link {padding: 12px 28px !important;}
+.wedding-cards-header-button .elementor-button-link {padding: 12px 35px !important;}
+.wedding-cards-pick-a-template ::before {display:none;}
+.wedding-cards-pick-a-template ::after {display:none;}
+.wedding-cards-build-number ::before {transform: rotate(-91deg);left: 10px !important;top: 86% !important;right:0;}
+.wedding-cards-build-number {width: 130px !important;height: 130px;margin-top: 20px !important;}
+.wedding-cards-build-number .elementor-heading-title {margin-top: 45px !important;}
+.wedding-cards-customize-your-cards ::before {display:none;}
+.wedding-cards-customize-your-cards ::after {display:none;}
+.wedding-cards-build-number-2 ::after {transform: rotate(91deg);left: -23px;top: 86%;}
+.wedding-cards-build-number-2 {width: 130px !important;height: 130px;margin-top: 20px;}
+.wedding-cards-fill-in-the ::before {display:none;}
+.wedding-cards-fill-in-the ::after {display:none;}
+.wedding-cards-cards-ready ::before {display:none;}
+.wedding-cards-cards-ready ::after {display:none;}
+.wedding-cards-build-number-2 .elementor-heading-title {margin-top: 45px !important;}
+.pick-template-left {order:3 ;margin-top: 40px;}
+.pick-template-right {order:1;}
+.pick-template-center {order:2;}
+.wedding-cards-wedding-page-img {position: relative;left: 0;top: 0;margin-top:20px;}
+.wedding-cards-wedding-page-second {position: relative;left: 0;top: 0;margin-top:20px;}
+}
+/* Wedding Cards */

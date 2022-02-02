@@ -7,7 +7,7 @@ img{max-width:100%;}
 .text-right{text-align:right;}
 /* ------------------ default styles ------------------ */
 .breadcrumbs{padding:10px 0; margin-bottom:0;}
-ol.commentlist{list-style:none;}
+ol.commentlist{list-style:none; background-color: pink}
 #commentform p{margin:5px 0;}
 #commentform label{display:block;}
 #commentform input#email, #commentform input#url, #commentform input#author, #commentform textarea, #commentform input#eazycfc_captcha{max-width:96%; border:1px #ccc solid; padding:5px 2%;}

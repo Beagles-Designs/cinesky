@@ -599,7 +599,7 @@ ol.comment-list li {
   width: 100%;
   z-index: 999;
   position: relative;
-  background-color: #fbeee8;
+  background-color: blue;
   height: auto;
   float: left;  
 }

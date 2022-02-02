@@ -4,7 +4,7 @@ Tags: gutenberg, elementor, themes, one click demo import, templates
 Requires at least: 5.0
 Tested up to: 5.8
 Requires PHP: 5.6
-Stable tag: 3.5
+Stable tag: 3.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -79,6 +79,19 @@ Yes if your site import is done and you are currently editing via Elementor or i
 
 
 == Changelog ==
+= 3.8 =
+
+* Added Complete Set Of Wedding Cards Template.
+* Resolved WooCommerce Ajax Conflict.
+
+= 3.7 =
+
+Added Complete Set Of Mechanic Template.
+
+= 3.6 =
+
+Added Complete Set Of Extreme Sports Template.
+
 = 3.5 =
 
 Resolved SKT Blocks issue and added freemius deactivation form feedback
