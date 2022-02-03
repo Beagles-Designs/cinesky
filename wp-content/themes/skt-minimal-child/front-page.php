@@ -42,76 +42,84 @@ get_header(); ?>
 
 <section class="crane-hero-content main-content">
     <?php $homepage_image2 = get_field('homepage_image_2'); ?>
-    <div class="crane-hero-image" style='background-image:url(<?php echo $homepage_image2; ?>)' >
-        <div class="homepage-crane-options">
-            <h5>Crane Options</h5>
-            <div class="crane-styles">    
-                <ul class="homepage-crane-types">
-                    <?php while ( have_posts()) : the_post(); 
-                        $hp_gear_a1 = get_field("hp_gear_a1");
-                        $hp_gear_a2 = get_field("hp_gear_a2");
-                        $hp_gear_b1 = get_field("hp_gear_b1");
-                        $hp_gear_b2 = get_field("hp_gear_b2");
-                        $hp_gear_c1 = get_field("hp_gear_c1");
-                        $hp_gear_c2 = get_field("hp_gear_c2");
-                        $hp_gear_d1 = get_field("hp_gear_d1");
-                        $hp_gear_d2 = get_field("hp_gear_d2");
-                    ?>
-                        <!-- Loop content here -->
-                        <li class="gear-individual">
-                            <div>
-                                <h4 class="gear-title"><?php echo $hp_gear_a1; ?></h4>
-                                <p class="gear-homepage-specs"><?php echo $hp_gear_a2; ?></p>
-                            </div>
-                        </li>
-                         <li class="gear-individual">
-                            <div>
-                                <h4 class="gear-title"><?php echo $hp_gear_b1; ?></h4>
-                                <p class="gear-homepage-specs"><?php echo $hp_gear_b2; ?></p>
-                            </div>    
-                        </li> 
-                         <li class="gear-individual">
-                            <div>
-                                <h4 class="gear-title"><?php echo $hp_gear_c1; ?></h4>
-                                <p class="gear-homepage-specs"><?php echo $hp_gear_c2; ?></p>
-                            </div>
-                        </li> 
-                         <li class="gear-individual">
-                            <div>
-                                <h4 class="gear-title"><?php echo $hp_gear_d1; ?></h4>
-                                <p class="gear-homepage-specs"><?php echo $hp_gear_d2; ?></p>
-                            </div>
-                        </li>     
-                    <?php endwhile; ?>      
-                </ul>
-            </div>    
-        </div>
-    </div>   
+    <div class="crane-hero-image" style='background-image:url(<?php echo $homepage_image2; ?>); background-size: cover; background-repeat: no-repeat; background-position: center;' >
+    </div>     
+    <div class="homepage-crane-options">
+        <h5>Crane Options</h5>
+        <div class="crane-styles">    
+            <ul class="homepage-crane-types">
+                <?php while ( have_posts()) : the_post(); 
+                    $hp_gear_a1 = get_field("hp_gear_a1");
+                    $hp_gear_a2 = get_field("hp_gear_a2");
+                    $hp_gear_b1 = get_field("hp_gear_b1");
+                    $hp_gear_b2 = get_field("hp_gear_b2");
+                    $hp_gear_c1 = get_field("hp_gear_c1");
+                    $hp_gear_c2 = get_field("hp_gear_c2");
+                    $hp_gear_d1 = get_field("hp_gear_d1");
+                    $hp_gear_d2 = get_field("hp_gear_d2");
+                ?>
+                    <!-- Loop content here -->
+                    <li class="gear-individual">
+                        <div>
+                            <h4 class="gear-title"><?php echo $hp_gear_a1; ?></h4>
+                            <p class="gear-homepage-specs"><?php echo $hp_gear_a2; ?></p>
+                        </div>
+                    </li>
+                     <li class="gear-individual">
+                        <div>
+                            <h4 class="gear-title"><?php echo $hp_gear_b1; ?></h4>
+                            <p class="gear-homepage-specs"><?php echo $hp_gear_b2; ?></p>
+                        </div>    
+                    </li> 
+                     <li class="gear-individual">
+                        <div>
+                            <h4 class="gear-title"><?php echo $hp_gear_c1; ?></h4>
+                            <p class="gear-homepage-specs"><?php echo $hp_gear_c2; ?></p>
+                        </div>
+                    </li> 
+                     <li class="gear-individual">
+                        <div>
+                            <h4 class="gear-title"><?php echo $hp_gear_d1; ?></h4>
+                            <p class="gear-homepage-specs"><?php echo $hp_gear_d2; ?></p>
+                        </div>
+                    </li>     
+                <?php endwhile; ?>      
+            </ul>
+        </div>    
+        <p id="hp-gear-link"><a href="gear">Click Here </a>for our full gear list, additional items and spcifications.</p>
+    </div>
+      
 </section>
 
 <section class="project-types main-content">
     <div class='site-content'>
-        <h2>Project Types</h2>
+        <h2 id="project-header">Project Types</h2>
 
         <ul class="homepage-project-types">
             <?php query_posts('posts_per_page=3&post_type=project_types'); ?>
                 <?php while ( have_posts()) : the_post(); 
                     $image1 = get_field("image_1");
+                    $subtitle = get_field("projects_subtitle");
                     $size = "medium";
                 ?>
                     <!-- Loop content here -->
                     <li class="featured-work-individual">
                         <figure>
                             <a href="<?php echo site_url('/services/') ?>"><?php echo wp_get_attachment_image($image1, $size); ?></a>
+                            <div class="project-caption">
+                                <h3><a href="<?php the_permalink(); ?>"><strong><?php the_title(); ?></strong></a></h3>
+                                <h4><?php echo $subtitle ?></h4>
+                            </div>
                         </figure>
-                        <h3><a href="<?php the_permalink(); ?>"><strong><?php the_title(); ?></strong></a></h3>
                     </li>    
                 <?php endwhile; ?>
             <?php wp_reset_query(); ?>         
         </ul>
-        <h3>Every project is unique.</h3>
+        <h3 id="unique">Every project is unique.</h3>
         <p>Call or email for a quote to meet your project's needs.</p>
-        <a class='button' href="mailto:sarah.e.beagle@gmail.com?subject=Interested Production for a Cinesky Quote">Email Now</a>
+        <div class='button-div'>
+            <a class='button' href="mailto:sarah.e.beagle@gmail.com?subject=Interested Production for a Cinesky Quote">Email Now</a>
+        </div>
     </div>    
 </section>
 

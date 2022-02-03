@@ -18,11 +18,11 @@
           <?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'menu_class' => 'footer-menu', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
         </nav>
 
-        <div class="logo">
+        <div class="logo footer-logo">
             <a href="<?php echo site_url('/home/') ?>"><?php skt_minimal_the_custom_logo(); ?></a>
         </div> 
 
-        <div>
+        <div class="footer-contact">
           <p>CONTACT</p>
           <a href="mailto:sarah.e.beagle@gmail.com?subject=Interested Production for a Cinesky Quote">youremail@gmail.com</a>
         </div>
