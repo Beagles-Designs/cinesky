@@ -1,8 +1,8 @@
 <?php
-
 namespace SktThemes;
 
 if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
+
 	class PageTemplatesDirectory {
 
 		/**
@@ -59,9 +59,9 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 		 * Enqueue the scripts for the dashboard page of the
 		 */
 		public function enqueue_template_dir_scripts() {
-			$current_screen = get_current_screen();
-			if ( $current_screen->id === 'skt-templates_page_skt_template_directory' ) {
-				if ( $current_screen->id === 'skt-templates_page_skt_template_directory' ) {
+			$templatepage = isset($_REQUEST['page']) ? $_REQUEST['page'] :'';
+			if ( $templatepage === 'skt_template_directory') {
+				if ( $templatepage === 'skt_template_directory') {
 					$plugin_slug = 'sktb';
 				}  
 				$script_handle = $this->slug . '-script';
@@ -80,12 +80,10 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 			}
 		}
 		
-		
-		
 		public function gutenberg_enqueue_template_dir_scripts() {
-			$current_screen = get_current_screen();
-			if ( $current_screen->id === 'skt-templates_page_skt_template_gutenberg' ) {
-				if ( $current_screen->id === 'skt-templates_page_skt_template_gutenberg' ) {
+			$templatepage = isset($_REQUEST['page']) ? $_REQUEST['page'] :'';
+			if ( $templatepage === 'skt_template_gutenberg') {
+				if ( $templatepage === 'skt_template_gutenberg') {
 					$plugin_slug = 'sktb';
 				}  
 				$script_handle = $this->slug . '-script';
@@ -334,6 +332,42 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 				'required_plugins' => array( 'elementor' => array( 'title' => __( 'Elementor Page Builder', 'skt-templates' ) ) ),
 			);
 			$templates_list = array(
+				'sktwildlife-elementor'              => array(
+					'title'       => __( 'SKT Wildlife', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('#'),
+					'demo_url'    => esc_url('https://demosktthemes.com/free/skt-wildlife/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/skt-wildlife/skt-wildlife.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/skt-wildlife/skt-wildlife.json'),
+					'keywords'    => __( ' wildlife, wild, open shelter, jungle safari, veterinary clinic, zoo, pet shop, aquarium, green landscaping, nature conservation, environment, forest, farm produce, bio produce, animal husbandry, agriculture, Ayurveda, medicines, organic products, NGOs, resorts, travel trip and tourism, photographers, wildlife enthusiasts, animal lovers', 'skt-templates' ),
+				),			
+				'handyman-elementor'              => array(
+					'title'       => __( 'Handy Man', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('#'),
+					'demo_url'    => esc_url('https://demosktthemes.com/free/handy/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/handy/handyman.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/handy/handyman.json'),
+					'keywords'    => __( ' help, helper, helpmate, home security system, hot tub, spa, lamp repair, handyman, landscaping, lawncare, lockset adjustment, maid service, molding installation, moving, paint removal, painting, patio stone installation, pest control, plumbing repair, porch, remodeling basement, remodeling bathroom, remodeling kitchen, roofing, safety modification, sealing driveway, senior living modification, septic system repair, shelf installation, shelving, skylight installation, soundproofing, sprinkler repair, sprinkler system installation, stain removal, staining furniture, stone work, storage area construction, storage area repair, swapping a toilet, swimming pool maintenance, tiling, trash removal, wall building, water purification, water softening, window cleaning, welding, window installation, window repair, window screen, duty, work, waste removal, welder, repair, adjustment, improvment, overhaul, reconstruction, rehabilitation, maintenance, welding service, alteration, remaking, resetting', 'skt-templates' ),
+				),
+				'sktminimal-elementor'              => array(
+					'title'       => __( 'Minimal', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('https://demosktthemes.com/free/minimal/'),					
+					'demo_url'    => esc_url('https://demosktthemes.com/free/minimal/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/minimal/skt-minimal.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/minimal/skt-minimal.json'),
+					'keywords'    => __( ' minimal, minimalistic, eCommerce, store, shop, furniture, chair, ceramic materials, baked clay, equipment, tools, apparatus, utensils, electronic devices, home decor, lighting, gear, makeovers, decorating, decoration, consumer goods, crockery, stoneware, art, earthenware, ceramic, clay ware, ware, ceramic ware, potteries', 'skt-templates' ),
+				),
+				'posterity-elementor'              => array(
+					'title'       => __( 'Posterity', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('https://www.sktthemes.org/shop/free-creative-agency-wordpress-theme'),
+					'demo_url'    => esc_url('https://demosktthemes.com/free/posterity/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/posterity/posterity.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/posterity/posterity.json'),
+					'keywords'    => __( ' posteriy, multipurpose, pet, dogs, chocolate, food, recipe, corporate, construction, real estate, charity, trust, car, automobile, hair, industry, factory, consulting, office, accounting, computers, cafe, fitness, gym, architect, interior' ),
+				),												
 				'weddingcardshome-elementor'              => array(
 					'title'       => __( 'Wedding Cards Home', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
@@ -451,15 +485,6 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 					'import_file' => esc_url('https://demosktthemes.com/free/mosque/skt-mosque.json'),
 					'keywords'    => __( ' mosque, masjid, prayers, offerings, donation, charity, NGO, kids learning centre, meditation, nonprofit, fundraising, foster home, caretaker, Humanitarian, food trust, welfare schemes, volunteer programs, relief fund, church, disaster, peace, amnesty, blood donation camps, child education', 'skt-templates' ),
 				),		
-				'posterity-elementor'              => array(
-					'title'       => __( 'Posterity', 'skt-templates' ),
-					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
-					'theme_url'   => esc_url('https://www.sktthemes.org/shop/free-creative-agency-wordpress-theme'),
-					'demo_url'    => esc_url('https://demosktthemes.com/free/posterity/'),
-					'screenshot'  => esc_url('https://demosktthemes.com/free/posterity/posterity.jpg'),
-					'import_file' => esc_url('https://demosktthemes.com/free/posterity/posterity.json'),
-					'keywords'    => __( ' posteriy, multipurpose, pet, dogs, chocolate, food, recipe, corporate, construction, real estate, charity, trust, car, automobile, hair, industry, factory, consulting, office, accounting, computers, cafe, fitness, gym, architect, interior' ),
-				),
 				'posteritydark-elementor'              => array(
 					'title'       => __( 'Posterity Dark', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
@@ -469,15 +494,6 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 					'import_file' => esc_url('https://demosktthemes.com/free/posterity-dark/posterity-dark.json'),
 					'keywords'    => __( ' posteriy, posteriydark, dark, multipurpose, pet, dogs, chocolate, food, recipe, corporate, construction, real estate, charity, trust, car, automobile, hair, industry, factory, consulting, office, accounting, computers, cafe, fitness, gym, architect, interior' ),
 				),
-				'sktminimal-elementor'              => array(
-					'title'       => __( 'Minimal', 'skt-templates' ),
-					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
-					'theme_url'   => esc_url('https://demosktthemes.com/free/minimal/'),					
-					'demo_url'    => esc_url('https://demosktthemes.com/free/minimal/'),
-					'screenshot'  => esc_url('https://demosktthemes.com/free/minimal/skt-minimal.jpg'),
-					'import_file' => esc_url('https://demosktthemes.com/free/minimal/skt-minimal.json'),
-					'keywords'    => __( ' minimal, minimalistic, eCommerce, store, shop, furniture, chair, ceramic materials, baked clay, equipment, tools, apparatus, utensils, electronic devices, home decor, lighting, gear, makeovers, decorating, decoration, consumer goods, crockery, stoneware, art, earthenware, ceramic, clay ware, ware, ceramic ware, potteries', 'skt-templates' ),
-				),				
 				'saturnwp-elementor'              => array(
 					'title'       => __( 'SaturnWP', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
@@ -720,16 +736,7 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 					'screenshot'  => esc_url('https://demosktthemes.com/free/app/minimal.jpg'),
 					'import_file' => esc_url('https://demosktthemes.com/free/app/minimal.json'),
 					'keywords'    => __( ' minimal, minimalistic, white, flat, material, simple, clean, natural', 'skt-templates' ),
-				),														
-				'handyman-elementor'              => array(
-					'title'       => __( 'Handy Man', 'skt-templates' ),
-					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
-					'theme_url'   => esc_url('#'),
-					'demo_url'    => esc_url('https://demosktthemes.com/free/handy/'),
-					'screenshot'  => esc_url('https://demosktthemes.com/free/handy/handyman.jpg'),
-					'import_file' => esc_url('https://demosktthemes.com/free/handy/handyman.json'),
-					'keywords'    => __( ' help, helper, helpmate, home security system, hot tub, spa, lamp repair, handyman, landscaping, lawncare, lockset adjustment, maid service, molding installation, moving, paint removal, painting, patio stone installation, pest control, plumbing repair, porch, remodeling basement, remodeling bathroom, remodeling kitchen, roofing, safety modification, sealing driveway, senior living modification, septic system repair, shelf installation, shelving, skylight installation, soundproofing, sprinkler repair, sprinkler system installation, stain removal, staining furniture, stone work, storage area construction, storage area repair, swapping a toilet, swimming pool maintenance, tiling, trash removal, wall building, water purification, water softening, window cleaning, welding, window installation, window repair, window screen, duty, work, waste removal, welder, repair, adjustment, improvment, overhaul, reconstruction, rehabilitation, maintenance, welding service, alteration, remaking, resetting', 'skt-templates' ),
-				),	
+				),															
 				'cctv-elementor'              => array(
 					'title'       => __( 'CCTV', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
@@ -1991,7 +1998,7 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 				'_elementor_edit_mode' => ! empty( $elementor_edit_mode_meta[0] ) ? $elementor_edit_mode_meta[0] : '',
 				'_elementor_css'       => $elementor_css_meta,
 			);
-			if($template_name=='Extreme Sports Home' || $template_name=='Extreme Sports About' || $template_name=='Extreme Sports Activities' || $template_name=='Extreme Sports Contact' || $template_name=='Mechanic Home' || $template_name=='Mechanic About' || $template_name=='Mechanic Services' || $template_name=='Mechanic Contact'){
+			if($template_name=='Wedding Cards Home' || $template_name=='Wedding Cards About' || $template_name=='Wedding Cards' || $template_name=='Wedding Cards Contact' || $template_name=='Extreme Sports Home' || $template_name=='Extreme Sports About' || $template_name=='Extreme Sports Activities' || $template_name=='Extreme Sports Contact' || $template_name=='Mechanic Home' || $template_name=='Mechanic About' || $template_name=='Mechanic Services' || $template_name=='Mechanic Contact'){
 				$new_template_page = array(
 				'post_type'     => 'page',
 				'post_title'    => $template_name,
@@ -2191,7 +2198,7 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 		 */
 		public function __clone() {
 			// Cloning instances of the class is forbidden.
-			_doing_it_wrong( __FUNCTION__, esc_html__( 'Cheatin&#8217; huh?', 'skt-templates' ), '1.0.0' );
+			_doing_it_wrong( __FUNCTION__, esc_html( 'Cheatin&#8217; huh?'), '1.0.0' );
 		}
 
 		/**
@@ -2203,7 +2210,7 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 		 */
 		public function __wakeup() {
 			// Unserializing instances of the class is forbidden.
-			_doing_it_wrong( __FUNCTION__, esc_html__( 'Cheatin&#8217; huh?', 'skt-templates' ), '1.0.0' );
+			_doing_it_wrong( __FUNCTION__, esc_html( 'Cheatin&#8217; huh?'), '1.0.0' );
 		}
 	}
 }

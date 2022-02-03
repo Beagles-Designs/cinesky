@@ -3,10 +3,10 @@
   Plugin Name: Embed Plus Plugin for YouTube, with YouTube Gallery, Channel, Playlist, Live Stream, Facade
   Plugin URI: https://www.embedplus.com/dashboard/pro-easy-video-analytics.aspx?ref=plugin
   Description: YouTube Embed Plugin. Embed a YouTube channel gallery, playlist gallery, YouTube live stream. Lite embeds with defer JavaScript and facade options
-  Version: 14.0.1.3
+  Version: 14.0.1.4
   Author: Embed Plus for YouTube Team
   Author URI: https://www.embedplus.com
-  Requires at least: 4.1
+  Requires at least: 4.5
  */
 
 /*
@@ -35,7 +35,7 @@ class YouTubePrefs
 
     public static $folder_name = 'youtube-embed-plus';
     public static $curltimeout = 30;
-    public static $version = '14.0.1.3';
+    public static $version = '14.0.1.4';
     public static $opt_version = 'version';
     public static $optembedwidth = null;
     public static $optembedheight = null;
@@ -3224,7 +3224,7 @@ class YouTubePrefs
         $new_pointer_content = '<h3>' . __('New Update') . '</h3>'; // ooopointer
 
         $new_pointer_content .= '<p>'; // ooopointer
-        $new_pointer_content .= "This update fixes an issue with facade images on playlist embeds, and improves compatibility with AJAX themes for both free and <a target=_blank href=" . self::$epbase . '/dashboard/pro-easy-video-analytics.aspx?ref=frompointer' . ">Pro versions (discounts throughout the holidays)</a>.";
+        $new_pointer_content .= "This update adds compatibility to the YouTube Wizard in WordPress 5.9 for both free and <a target=_blank href=" . self::$epbase . '/dashboard/pro-easy-video-analytics.aspx?ref=frompointer' . ">Pro versions</a>.";
         if (self::vi_logged_in())
         {
             $new_pointer_content .= "<br><br><strong>Note:</strong> You are currently logged into the vi intelligence feature. vi support is being deprecated in the next version, so we recommend taking the vi ads down from your site. Please contact ext@embedplus.com for questions.";

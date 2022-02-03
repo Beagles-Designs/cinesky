@@ -17,13 +17,24 @@ get_header(); ?>
     <div id="primary" class="home-page hero-content main-content">
         <div class="main-content" role="main">
             <?php while ( have_posts()) : the_post();  ?>   
-                <?php $hero_image_url = get_field('homepage_hero_image'); ?> 
+                <?php 
+                    $hero_image_url = get_field('homepage_hero_image'); 
+                    $boom_travel_url = get_field('boom_travel');
+                    $head_rotation  = get_field('head_rotation');
+                    $size = 'full';
+                ?> 
                 <h1>Adding Unparalleled Production Value with Every Shot</h1>
-                <div class="homepage-hero-container" style='background-image:url(<?php echo $hero_image_url; ?>)' >
-                    <div class="homepage-headline-container">
-                        <h2>To craft shots that compel and engage;</br>to surpass expectations</h2>
-                        <a class="quote-contact" href="mailto:sarah.e.beagle@gmail.com?subject=Interested Production for a Cinesky Quote">Email us for a Quote Today</a>
-                    </div>
+                <div class="homepage-hero-container parallax" style='background-image:url(<?php echo $hero_image_url; ?>); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center;'>
+                        <div class="homepage-headline-container parallax-content">
+                            <div class="boom-travel-graphic">
+                                <?php echo wp_get_attachment_image($boom_travel_url, $size); ?>
+                            </div>
+                            <h2>To craft shots that compel and engage;</br>to surpass expectations</h2>
+                            <a class="quote-contact" href="mailto:sarah.e.beagle@gmail.com?subject=Interested Production for a Cinesky Quote">  Email us for a Quote Today  </a>
+                            <div class="head-rotation-graphic">
+                                <?php echo wp_get_attachment_image($head_rotation, $size); ?>
+                            </div>
+                        </div>   
                 </div>
             <?php endwhile; // end of the loop. ?>
         </div><!-- .main-content -->
@@ -34,18 +45,46 @@ get_header(); ?>
     <div class="crane-hero-image" style='background-image:url(<?php echo $homepage_image2; ?>)' >
         <div class="homepage-crane-options">
             <h5>Crane Options</h5>
-        <ul class="homepage-crane-types">
-            <?php query_posts('posts_per_page=4&post_type=cranes'); ?>
-                <?php while ( have_posts()) : the_post(); 
-                    $specs = get_field("homepage_specs");
-                ?>
-                    <!-- Loop content here -->
-                    <li class="crane-individual">
-                        <h4 class="crane-title"><?php the_title(); ?></h4>
-                        <p class="crane-homepage-specs"><?php echo "$specs"; ?></p>
-                <?php endwhile; ?>
-            <?php wp_reset_query(); ?>         
-        </ul>
+            <div class="crane-styles">    
+                <ul class="homepage-crane-types">
+                    <?php while ( have_posts()) : the_post(); 
+                        $hp_gear_a1 = get_field("hp_gear_a1");
+                        $hp_gear_a2 = get_field("hp_gear_a2");
+                        $hp_gear_b1 = get_field("hp_gear_b1");
+                        $hp_gear_b2 = get_field("hp_gear_b2");
+                        $hp_gear_c1 = get_field("hp_gear_c1");
+                        $hp_gear_c2 = get_field("hp_gear_c2");
+                        $hp_gear_d1 = get_field("hp_gear_d1");
+                        $hp_gear_d2 = get_field("hp_gear_d2");
+                    ?>
+                        <!-- Loop content here -->
+                        <li class="gear-individual">
+                            <div>
+                                <h4 class="gear-title"><?php echo $hp_gear_a1; ?></h4>
+                                <p class="gear-homepage-specs"><?php echo $hp_gear_a2; ?></p>
+                            </div>
+                        </li>
+                         <li class="gear-individual">
+                            <div>
+                                <h4 class="gear-title"><?php echo $hp_gear_b1; ?></h4>
+                                <p class="gear-homepage-specs"><?php echo $hp_gear_b2; ?></p>
+                            </div>    
+                        </li> 
+                         <li class="gear-individual">
+                            <div>
+                                <h4 class="gear-title"><?php echo $hp_gear_c1; ?></h4>
+                                <p class="gear-homepage-specs"><?php echo $hp_gear_c2; ?></p>
+                            </div>
+                        </li> 
+                         <li class="gear-individual">
+                            <div>
+                                <h4 class="gear-title"><?php echo $hp_gear_d1; ?></h4>
+                                <p class="gear-homepage-specs"><?php echo $hp_gear_d2; ?></p>
+                            </div>
+                        </li>     
+                    <?php endwhile; ?>      
+                </ul>
+            </div>    
         </div>
     </div>   
 </section>

@@ -19,18 +19,68 @@ Cinesky Theme is based on SKT Minimal theme(SKT Minimal 2021 is distributed unde
    margin: 0 auto;
   }
 
+div#primary {
+    margin-top: 40px;
+}
+
 .main-content {
     width: 100%;
     max-width: 1300px;
 }
 
+body {
+    font-family: "Futura";
+    color: black;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'copperplate';
+    font-weight: normal;   
+    width: auto; 
+}
+
+h5 {
+    font-size: 1.5em;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* ----- PINK UNDERLINE FOR TITLES ------- */
+a.quote-contact, h5 {
+    font-weight: medium;
+    position: relative;
+    border-bottom: 2px solid #E53567;
+    padding-bottom: 4px;
+}
+
+a.quote-contact:before, h5:before {
+    position: absolute;
+    margin-left: -10px;
+    content: "|";
+    bottom: -9px;
+    color: #E53567;
+}
+
+
+a.quote-contact:after, h5:after {
+    position: absolute;
+    content: "|";
+    bottom: -9px;
+    color: #E53567;
+}
 
 /* ---- HEADER  ----*/
 
 .header {
-    padding: 50px 0;
+    padding: 20px 0 40px 0;
     background-color: white;
 }
+
 
 .main-navigation ul li.current-menu-item a, .main-navigation ul li.current_page_item a {
     opacity: 1;
@@ -44,6 +94,108 @@ Cinesky Theme is based on SKT Minimal theme(SKT Minimal 2021 is distributed unde
 
 .is-style-rounded {
     border-radius: 50%;
+}
+
+/* ------ HOMEPAGE CONTENT      ------------ */ 
+
+.homepage-hero-container {
+    height: auto;
+    min-height: 434px;
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+
+.homepage-hero-container img{
+    width: 100%;
+    margin: 0 auto 0 auto;
+    height: auto;
+    position: relative;
+}
+
+div.homepage-headline-container {
+    display:  flex;
+    flex-wrap:  wrap;
+    position: absolute; top: 56%;
+}
+
+div.homepage-headline-container h2, div .homepage-headline-container a {
+    max-width: 66%;
+    height: 1.5em;
+    margin: auto;
+    padding-bottom: 53px;
+}
+
+div .homepage-headline-container a {
+    width: auto;
+    padding: 0 5px;
+}
+
+
+
+.boom-travel-graphic, .head-rotation-graphic {
+    max-width: 33%;
+    height: auto;
+}
+
+.head-rotation-graphic {
+    width: 73px;
+    height: 85px;
+}
+
+.boom-travel-graphic {
+    width: 105px;
+    height: 117px;
+    margin-left: -18px;
+}
+
+div.homepage-crane-options {
+    background-color: #58595B;
+}
+
+.homepage-crane-options h5 {
+    width: 57%;
+    margin: 0 auto 20px auto;
+}
+div.crane-styles {
+    width: 95%;
+    margin: auto;
+}
+
+ul.homepage-crane-types {
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin: 0;
+}
+
+/*ul.homepage-crane-types li::marker{
+    color: #E53567;
+    font-size: 2.5em;
+}*/
+
+ul.homepage-crane-types li::before{
+    content: "•";
+    color: #E53567;
+    font-size: 2.5em;
+    margin-right: 8px;
+}
+
+li.gear-individual {
+    display: flex;
+    align-items: center;
+}
+
+.gear-title {
+    font-family: 'futura';
+    font-size: 1.125em;
+    color:  black;
+
+}
+
+.gear-homepage-specs {
+    font-size: .8em;
+    color: white;
 }
 
 /*----------------------------------- Responsive Styles -----------------------------------------*/
@@ -80,24 +232,37 @@ Cinesky Theme is based on SKT Minimal theme(SKT Minimal 2021 is distributed unde
   }
   .header {
     width: 100%;
-    padding: 0;
     position: relative!important;
     background-color: white!important;
   }
 
   .logo {
-    float: none;
+    float: left;
     text-align: center;
     padding: 20px 0 !important;
     position: relative;
-    width: auto;
+    width: 60%;
   }
+
+  .logo img {
+    width:  148px;
+    height: auto;
+  }
+
   .logo h2 {
     text-align: center;
   }
   .logo p {
     text-align: center;
   }
+
+  .menu-toggle span {
+    width: 45px;
+  }
+  #site-navigation {
+    margin-top: 20px;
+  }
+
   #sidebar {
     width: 100%;
     float: none;
@@ -120,6 +285,29 @@ Cinesky Theme is based on SKT Minimal theme(SKT Minimal 2021 is distributed unde
   .copyright-wrapper {
     text-align: center;
   }
+  h1 {
+    font-size: 1.75em;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto 40px auto;
+  }
+
+  div.homepage-headline-container {
+    background-color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+
+
+
+
+
+
   h2.section_title {
     text-align: center;
   }
@@ -146,6 +334,8 @@ Cinesky Theme is based on SKT Minimal theme(SKT Minimal 2021 is distributed unde
   .header .container {
     border-bottom: none;
     padding: 0;
+    display: flex;
+    align-items: center;
   }
   .row_area {
     margin: 0;
@@ -174,9 +364,9 @@ Cinesky Theme is based on SKT Minimal theme(SKT Minimal 2021 is distributed unde
       padding:20px 0;
   }
   #navigation{
-      float:none;
+      float: right;
       text-align:center;
-      width:100%;
+      width:40%;
   }
   #top-social{
       float:none;

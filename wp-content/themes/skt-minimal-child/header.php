@@ -13,6 +13,7 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="https://use.typekit.net/hll5gcf.css">
     <script src="https://kit.fontawesome.com/1129ed59a0.js" crossorigin="anonymous"></script>
     <?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
     	<link rel="pingback" href="<?php echo esc_url( get_bloginfo( 'pingback_url' ) ); ?>">
