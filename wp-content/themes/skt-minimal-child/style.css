@@ -36,7 +36,8 @@ body {
 h1, h2, h3, h4, h5 {
     font-family: 'copperplate';
     font-weight: normal;   
-    width: auto; 
+    width: fit-content; 
+    margin: 0 auto 20px auto;
 }
 
 h5 {
@@ -48,6 +49,8 @@ h5 {
 
 ul {
     list-style-type: none;
+    margin: 0; 
+    padding: 0;
 }
 
 /* ----- PINK UNDERLINE FOR TITLES ------- */
@@ -60,7 +63,7 @@ a.quote-contact, h5, h2#project-header {
 
 a.quote-contact:before, h5:before, h2#project-header:before {
     position: absolute;
-    margin-left: -10px;
+    margin-left: -9px;
     content: "|";
     bottom: -9px;
     color: #E53567;
@@ -70,6 +73,7 @@ a.quote-contact:before, h5:before, h2#project-header:before {
 a.quote-contact:after, h5:after, h2#project-header:after {
     position: absolute;
     content: "|";
+    margin-right: -5px;
     bottom: -9px;
     color: #E53567;
 }
@@ -96,6 +100,61 @@ a.quote-contact:after, h5:after, h2#project-header:after {
     border-radius: 50%;
 }
 
+/*------------- FOOTER -----------------*/
+
+footer.site-footer {
+  width: 100%;
+}
+
+div.site-info {
+    display: flex;
+    flex-direction: row;
+}
+
+nav.footer-menu-navigation {
+    width: 38%;
+}
+
+div.footer-contact {
+    width: 62%;
+    text-align: center;
+    border-top: 1px #E53567 dashed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.menu-footer_menu-container {
+    border-top: 1px #E53567 dashed;
+    border-right: 1px #E53567 dashed;
+    padding: 20px 10%;
+}
+
+ul#menu-footer_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul#menu-footer_menu li {
+  padding: 5px 0;
+}
+
+div#copyright-area {
+  text-align: center;
+  border-top: 1px black solid;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+div#copyright-area p {
+  margin: 10px auto 15px auto;
+  font-size: .75em;
+  color: lightgrey; 
+
+}
+
 /* ------ HOMEPAGE CONTENT      ------------ */ 
 
 .homepage-hero-container {
@@ -116,6 +175,10 @@ div.homepage-headline-container {
     display:  flex;
     flex-wrap:  wrap;
     position: absolute; top: 56%;
+    background-color: white;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
 }
 
 div.homepage-headline-container h2 {
@@ -139,34 +202,34 @@ div .homepage-headline-container a {
     height: auto;
 }
 
-.head-rotation-graphic {
-    width: 73px;
-    height: 85px;
+div.boom-travel-graphic, div.head-rotation-graphic {
+  width: 33%;
 }
 
-.boom-travel-graphic {
+div.boom-travel-graphic img{
     width: 105px;
     height: 117px;
-    margin-left: -18px;
+    float: left;
+}
+
+div.head-rotation-graphic img{
+    width: 73px;
+    height: 85px;
 }
 
 div.crane-hero-image {
     width: auto;
     min-height: 238px;
-    position: relative;
 }
 
 div.homepage-crane-options {
     background-color: #58595B;
+    padding-top: 20px;
 }
 
-.homepage-crane-options h5 {
-    width: 57%;
-    margin: 0 auto 20px auto;
-}
 div.crane-styles {
     width: 95%;
-    margin: auto;
+    margin: 0 0 0 10%;
 }
 
 ul.homepage-crane-types {
@@ -175,6 +238,7 @@ ul.homepage-crane-types {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
     margin: 0;
+    justify-items: stretch;
 }
 
 ul.homepage-crane-types li::before{
@@ -231,17 +295,22 @@ section.project-types {
     margin-top: 50px;
 }
 
-li.featured-work-individual a img {
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    display: block;
+h2#project-header {
+  padding: 0 5px;
+  font-weight: bold;
+  width: fit-content;
+  margin: 0 auto 20px auto;
 }
+
 
 li.featured-work-individual figure {
     position: relative;
     display: inline-block;
     margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
 }
 
 div.project-caption {
@@ -251,10 +320,11 @@ div.project-caption {
     bottom: 0px;
     width: 100%;
     text-align: center;
-}
-
-div.project-caption {
     padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75px;
 }
 
 div.project-caption h3 {
@@ -263,6 +333,7 @@ div.project-caption h3 {
 
 div.project-caption h4 {
     margin-bottom:  33px;
+    width: 50%;
 }
 
 div.project-caption h3 strong {
@@ -289,6 +360,7 @@ div.button-div {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 5px;
 }
 
 div.button-div a {
@@ -296,34 +368,6 @@ div.button-div a {
     font-size: 1.5em;
 }   
 
-/*------------- FOOTER -----------------*/
-
-div.site-info {
-    display: flex;
-    flex-direction: row;
-}
-
-nav.footer-menu-navigation {
-    width: 38%;
-}
-
-div.footer-contact {
-    width: 62%;
-    text-align: center;
-    border-top: 1px #E53567 dashed;
-    padding-top: 20px;
-}
-
-div.menu-footer_menu-container {
-    border-top: 1px #E53567 dashed;
-    border-right: 1px #E53567 dashed;
-    padding-top: 20px;
-}
-
-ul#menu-footer_menu {
-    display: flex;
-    flex-direction: column;
-}
 
 /*----------------------------------- Responsive Styles -----------------------------------------*/
 
@@ -417,12 +461,6 @@ ul#menu-footer_menu {
     width: 90%;
     text-align: center;
     margin: 0 auto 40px auto;
-  }
-
-  div.homepage-headline-container {
-    background-color: white;
-    padding: 10px 0;
-    text-align: center;
   }
 
   h2.section_title {
@@ -551,9 +589,7 @@ div.footer-logo {
   .site-navigation .menu li {
     padding: 0!important;
   }
-  .logo {
-    padding: 25px 420px 25px 0;
-  }
+
   #navigate-main {
     width: 100%;
   }
@@ -567,12 +603,35 @@ div.footer-logo {
 }
 
 
-/* Tablet View */
+/* ------------------------------Tablet View ---------------------------------------*/
 
-@media screen and (max-width:1023px) and (min-width:768px) {
-  body.wp-custom-logo .logo {
-    padding: 25px 50px 12px 0!important;
-  }
+@media screen and (max-width:1279px) and (min-width:768px) {
+
+/* ------ Main Changes ------------ */
+
+h1, h2 {
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.6rem;
+  width: 85%;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+p {
+  font-size: 1.75rem;
+}
+
+
+/*--- Tablet Header ---- */
+
   .menu-toggle {
     top: 34px;
   }
@@ -587,7 +646,11 @@ div.footer-logo {
   }
   .header .container {
     padding: 0 20px 20px 25px;
+    width: 85%;
+    display: flex;
+    align-items: center;
   }
+
   #navigate-main {
     width: 100%;
   }
@@ -595,6 +658,15 @@ div.footer-logo {
   .site-navigation .menu ul ul a {
     color: #FFF!important;
   }
+
+  .main-navigation ul {
+    display: initial;
+  }
+
+  button.menu-toggle {
+    display: none;
+  }
+
   .main-navigation ul li a{
       line-height:inherit;
    }
@@ -625,7 +697,107 @@ div.footer-logo {
       padding-left:25px;
       font-size:45px;
   }
+
+/* ------- Tablet Footer Settings ------------*/
+
+div.footer-logo {
+  display: initial;
+  border-top: 1px #E53567 dashed;
+  border-right: 1px #E53567 dashed;
 }
+
+body.wp-custom-logo .logo {
+  padding: 20px 10%;
+
+}
+
+
+/*---- Homepage Tablet Settings -------*/ 
+
+
+.homepage-hero-container {
+  min-height: 486px;
+}
+
+div.homepage-headline-container h2 {
+  margin: auto;
+  max-width: 80%;
+  font-size: 1.5rem;
+  width: 80%;
+}
+
+div.homepage-headline-container a {
+  width:  fit-content;
+  font-size: 1.5rem;
+  margin: auto;
+}
+
+div.boom-travel-graphic, div.head-rotation-graphic {
+  width: 20%;
+}
+
+div.crane-hero-image {
+  min-height: 513px;
+}
+
+section.crane-hero-content {
+  position: relative;
+}
+
+div.homepage-crane-options {
+    width: 75%;
+    position: absolute;
+    right: 0;
+    bottom: -20%;
+}
+
+section.project-types {
+  margin-top: 150px;
+}
+
+h2#project-header {
+  font-size: 2.6rem;
+  margin-bottom: 50px;
+}
+
+ul.homepage-project-types {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+li.featured-work-individual {
+  width: 350px;
+  height: auto;
+}
+
+li.featured-work-individual figure {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
+
+div.project-caption {
+  height: 100px;
+}
+
+div.project-caption h3 {
+  font-size: 1.125rem;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+div.project-caption h4 {
+  font-size: 1rem;
+}
+
+h3#unique {
+  font-size: 2rem;
+}
+
+} /*  End Tablet Formatting */ 
 
 @media screen and (max-width:1169px) and (min-width:768px) {
   * {
@@ -684,9 +856,7 @@ div.footer-logo {
     margin-top: 20px;
     padding-right: 35px;
   }
-  body.wp-custom-logo .logo {
-    padding: 35px 30px 35px 0;
-  }
+ 
   .main-navigation ul li a{
       padding:0 11px !important;
   }
@@ -703,6 +873,8 @@ div.footer-logo {
       padding-left:25px;
       font-size:45px;
   }
+
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 980px) {
@@ -843,7 +1015,9 @@ div.footer-logo {
   }
 }
 
-@media screen and (min-width:1024px) {
+/* ------------------------------Desktop View ---------------------------------------*/
+
+@media screen and (min-width:1280px) {
     .menu-toggle {
         display: none;
     }
