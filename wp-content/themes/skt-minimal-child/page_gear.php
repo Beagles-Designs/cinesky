@@ -25,9 +25,9 @@ get_header(); ?>
         </div>    
         <div class="gear-crane-container maxwidth" id="crane-section">
             <h3 class="subtitle">Cranes</h3>
-            <p>Click for Additional Info</p>
+            <p>Click each for additional info</p>
             <ul class="crane-information gear-lists">
-                <?php query_posts('post_type=cranes'); ?>
+                <?php query_posts(array('post_type' => 'cranes', 'orderby' => 'publish_date', 'order' => 'ASC')); ?>
                 <?php while ( have_posts() ) : the_post(); 
                     $specs = get_field('homepage_specs');
                     $title = get_field('gear_page_crane_title');
@@ -43,8 +43,9 @@ get_header(); ?>
         <section id="additions-section">
             <div class="gear-additions-container maxwidth">
                 <h3 class="subtitle">Additions</h3>
+                <p>Click each for additional info</p>
                 <ul class="additions-information gear-lists">
-                    <?php query_posts('post_type=additions'); ?>
+                    <?php query_posts(array('post_type' => 'additions', 'orderby' => 'publish_date', 'order' => 'ASC')); ?>
                     <?php while ( have_posts() ) : the_post(); 
                         $popupclass = get_field('popup_class');
                          ?>
@@ -58,8 +59,9 @@ get_header(); ?>
           
             <div class="gear-heads-container maxwidth" id="heads-section">
                 <h3 class="subtitle">Remote Heads</h3>
-                <ul class="heads-information gear-lists">
-                    <?php query_posts('post_type=remote_heads'); ?>
+                <p>Click each for additional info</p>
+                <ul class="heads-information gear-lists" reversed>
+                    <?php query_posts(array('post_type' => 'remote_heads', 'orderby' => 'publish_date', 'order' => 'ASC')); ?>
                     <?php while ( have_posts() ) : the_post(); 
                         $popupclass = get_field('popup_class');
                          ?>
@@ -69,19 +71,24 @@ get_header(); ?>
                     <?php endwhile; // end of the loop. ?>
                 </ul>
             </div>
-        <div id="gear-email-tag-container">    
+        <div id="gear-email-tag-container" class='maxwidth'>    
             <h3>Call or Email to discuss your specific needs.</h3>
-            <a class='button' href="mailto:sarah.e.beagle@gmail.com?subject=Interested Production for a Cinesky Quote">Email Now</a>      
+            <div class="button-div">    
+                <a class='button' href="mailto:sarah.e.beagle@gmail.com?subject=Interested Production for a Cinesky Quote">Email Now</a>      
+            </div>
         </div>
         
-        <div class="clear"></div>
+  
         <div class="sticky-email">
                     <button class="popmake-227" onclick="emailToggle()"><i class="fas fa-envelope"></i><i class="fas fa-angle-up"></i></button>
                     <div id="popup-email">
                         <p>Call or email to discuss your specific needs</p>
-                        <a class='button' href="mailto:sarah.e.beagle@gmail.com?subject=Interested Production for a Cinesky Quote"><button class="popmake-227"><i class="fas fa-envelope"></i></button></a>
+                           
+                            <a class='button' href="mailto:sarah.e.beagle@gmail.com?subject=Interested Production for a Cinesky Quote"><button class="popmake-227"><i class="fas fa-envelope"></i></button></a>
+                        
                     </div>
         </div>
+        <div id='gear-spacer'></div>
     </div><!-- page_content -->
     </div>
 

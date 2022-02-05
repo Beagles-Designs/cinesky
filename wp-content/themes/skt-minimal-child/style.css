@@ -23,6 +23,7 @@ Cinesky Theme is based on SKT Minimal theme(SKT Minimal 2021 is distributed unde
 
 .page_content, .site-main, .site-content, .container {
   width: 100%;
+  float: none;
 }
 
 
@@ -42,6 +43,11 @@ body {
 
 header, h1, div#homepage-headline-clear, section.project-types, div.site-info, div.maxwidth {
   max-width: 1300px;
+}
+
+div.maxwidth {
+  width: 90%;
+  margin: auto;
 }
 
 h1, h2, h3, h4, h5 {
@@ -66,7 +72,7 @@ h3 {
 h3.subtitle {
   font-size: 2rem;
   font-weight: bold;
-  padding-top: 30px;
+  padding: 30px 5px 2px 5px;
 }
 
 h5 {
@@ -98,6 +104,11 @@ a.quote-contact:before, h5:before, h2:before, h3.subtitle:before {
     color: #E53567;
 }
 
+h3.subtitle:before {
+  margin-left: -13px;
+  bottom: -14px;
+}
+
 section.site-main h2:before {
   margin-left: -19px;
   bottom: -18px;
@@ -108,14 +119,16 @@ section.site-main h2:after {
 }
 
 
-
-
 a.quote-contact:after, h5:after, h2:after, h3.subtitle:after {
     position: absolute;
     content: "|";
     margin-right: -5px;
     bottom: -9px;
     color: #E53567;
+}
+
+h3.subtitle:after {
+  bottom: -14px;
 }
 
 /* ---- HEADER  ----*/
@@ -434,15 +447,31 @@ ul#menu-gear_subsection {
 div.sticky-email {
   position: -webkit-sticky; /*Safari */
   position:  sticky;
-  bottom: 0;
+  bottom: 210px;
   float: right;
-  padding: 20px 0;
+  right: 20px;
 }
+
 div.sticky-email button {
   background-color: #E53567;
   border-radius: 50%;
-  padding: 3px;
+  padding: 10px;
 } 
+
+div.sticky-email button i {
+  padding: 3px;
+}
+
+button.popmake-227 {
+  background-color: #E53567;
+  border: none;
+  padding: 15px 0 10px 0;
+}
+
+i#popup-envelope {
+  padding: 10px;
+  font-size: 2rem;
+}
 
 div#popup-email {
   display: none;
@@ -477,10 +506,14 @@ ul.gear-lists {
   padding-bottom: 30px;
 }
 
-li.gear1, li.gear2 {
+li.gear1 {
   border-bottom: 1px black dashed;
-  padding: 10px 0;
-  background-color: none;
+  padding: 20px 0;
+}
+
+li.gear2 {
+  border-bottom: 1px white dashed;
+  padding: 20px 0;
 }
 
 li.gear1 button, li.gear2 button {
@@ -507,15 +540,13 @@ div#gear-email-tag-container {
 
 div.pum div.theme-151 {
   border: 20px grey solid;
-  font-size: 1.125rem;
-  font-family: 'Futura';
 }
 
 div.pum-theme-151 div{
   text-align: center;
 }
 
-div.crane-tagline p{
+div.crane-tagline p, div#gear-tagline p {
   color: #E53567;
   padding-bottom: 15px;
 }
@@ -541,7 +572,7 @@ div.grid-odd p, div.grid-even p {
   max-width: 50%;
 }
 
-div.crane-additional-notes {
+div.crane-additional-notes, div.gear-content {
   width: 80%;
   margin: 20px auto;
 }
@@ -549,6 +580,15 @@ div.crane-additional-notes {
 div.crane-final-notes {
   width: 80%;
   margin: auto;
+}
+
+div#head-additions {
+  margin: 20px auto;
+}
+
+div#gear-spacer {
+  width: 100%;
+  height: 20px;
 }
 
 /*----------------------------------- Responsive Styles -----------------------------------------*/
@@ -818,6 +858,14 @@ p {
   font-size: 1.75rem;
 }
 
+h2:before {
+  margin-left:  -23px;
+}
+
+section.site-main h2:before, section.site-main h2:after{
+  bottom: -11px;
+}
+
 
 /*--- Tablet Header ---- */
 
@@ -952,9 +1000,7 @@ h2 {
   padding: 10px;
 }
 
-h2:before {
-  margin-left:  -23px;
-}
+
 
 ul.homepage-project-types {
   display: flex;
@@ -993,6 +1039,60 @@ h3#unique {
   font-size: 2rem;
 }
 
+/* ------ Gear Page Tablet Settings   ------ */ 
+
+
+ul#menu-gear_subsection li {
+  width:  33%;
+  text-align: center;
+}
+
+div.theme-151 {
+  position: absolute!important;
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+}
+
+div.theme-151 div.pum-title {
+  font-size: 1.5rem;
+}
+
+div.theme-151 div.pum-content p span {
+  font-size: 1.25rem;
+}
+
+div.crane-tagline p {
+  font-size: 1rem;
+  width: 75%;
+  margin: auto;
+}
+
+div.grid-odd p, div.grid-even p {
+  max-width: 75%;
+  font-size: 1rem;
+}
+
+div.crane-additional-notes p, div.gear-content p, div#gear-tagline p, div.additions-content p {
+  width: 75%%;
+  font-size: 1rem;
+}
+
+
+div.crane-final-notes p {
+  font-size: 1rem;
+}
+
+div#gear-email-tag-container {
+  display: initial;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto 30px auto;
+}
+
+
+
 } /*  End Main Tablet Formatting */ 
 
 @media screen and (max-width: 1279px) and (min-width: 860px) {
@@ -1010,7 +1110,6 @@ h3#unique {
   }
   .container {
     width: auto;
-    padding: 0 20px;
   }
 
   .logo {
@@ -1027,9 +1126,7 @@ h3#unique {
   #sidebar {
     width: 30%;
   }
-  .site-main {
-    width: 65%;
-  }
+
   .footer {
     padding-top: 40px;
     padding-bottom: 30px;
@@ -1235,6 +1332,7 @@ h3#unique {
       display: flex;
       align-items: center;
       width: 80%;
+      max-width: 1300px;
     }
 
     .main-navigation {
@@ -1280,10 +1378,33 @@ div.footer-contact p {
     padding: 15px;
   }
 
+  h3.subtitle {
+    font-size: 2.625rem;
+    padding: 50px 10px 2px 10px;
+  }
+
   h5 {
     font-size: 3rem;
     padding: 5px 10px;
   }
+
+  p {
+    font-size: 1rem;
+  }
+
+  section.site-main h2:before {
+    margin-left: -26px;
+  }
+
+  h3.subtitle:before {
+    margin-left: -20px;
+    bottom: -18px;
+  }
+
+  h3.subtitle:after {
+    bottom: -18px;
+  }
+
 
 /* ---- Desktop Homepage Settings ---*/
 
@@ -1385,7 +1506,7 @@ div.footer-contact p {
   }
 
   div.button-div {
-    margin: 50px auto 75px auto;
+    margin: 20px auto 30px auto;
   }
 
 } /* ---> End Desktop General Settings */
