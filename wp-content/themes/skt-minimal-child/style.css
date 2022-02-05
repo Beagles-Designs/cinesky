@@ -14,9 +14,17 @@ Cinesky Theme is based on SKT Minimal theme(SKT Minimal 2021 is distributed unde
 /*  ------ General Page Settings ------ */
 
 .page-header, .site-content, #navigation, .site-footer, .container {
-   width: 90%;
    margin: 0 auto;
   }
+
+.site-content {
+  width: 100vw;
+}  
+
+.page_content, .site-main, .site-content, .container {
+  width: 100%;
+}
+
 
 div#primary {
     margin-top: 40px;
@@ -43,6 +51,24 @@ h1, h2, h3, h4, h5 {
     margin: 0 auto 20px auto;
 }
 
+h2 {
+  padding: 0 10px;
+  font-weight: bold;
+  font-size: 2.6rem;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 1.5rem;
+
+}
+
+h3.subtitle {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
 h5 {
     font-size: 1.5em;
     color: #ffffff;
@@ -57,14 +83,14 @@ ul {
 }
 
 /* ----- PINK UNDERLINE FOR TITLES ------- */
-a.quote-contact, h5, h2#project-header {
+a.quote-contact, h5, h2, h3.subtitle {
     font-weight: medium;
     position: relative;
     border-bottom: 2px solid #E53567;
     padding-bottom: 4px;
 }
 
-a.quote-contact:before, h5:before, h2#project-header:before {
+a.quote-contact:before, h5:before, h2:before, h3.subtitle:before {
     position: absolute;
     margin-left: -9px;
     content: "|";
@@ -72,8 +98,19 @@ a.quote-contact:before, h5:before, h2#project-header:before {
     color: #E53567;
 }
 
+section.site-main h2:before {
+  margin-left: -19px;
+  bottom: -18px;
+}
 
-a.quote-contact:after, h5:after, h2#project-header:after {
+section.site-main h2:after {
+  bottom: -18px;
+}
+
+
+
+
+a.quote-contact:after, h5:after, h2:after, h3.subtitle:after {
     position: absolute;
     content: "|";
     margin-right: -5px;
@@ -319,13 +356,6 @@ section.project-types {
     margin-top: 50px;
 }
 
-h2#project-header {
-  padding: 0 5px;
-  font-weight: bold;
-  width: fit-content;
-  margin: 0 auto 20px auto;
-}
-
 
 li.featured-work-individual figure {
     position: relative;
@@ -392,6 +422,134 @@ div.button-div a {
     font-size: 1.5em;
 }   
 
+/* ------ GEAR PAGE CONTENT      ------------ */ 
+
+
+ul#menu-gear_subsection {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+div.sticky-email {
+  position: -webkit-sticky; /*Safari */
+  position:  sticky;
+  bottom: 0;
+  float: right;
+  padding: 20px 0;
+}
+div.sticky-email button {
+  background-color: #E53567;
+  border-radius: 50%;
+  padding: 3px;
+} 
+
+div#popup-email {
+  display: none;
+  background-color: #E53567;
+  width: 100%;
+  height: auto;
+}
+
+nav.gear-menu-navigation {
+  padding-bottom:  20px;
+}
+
+div.crane-image {
+  width: 100vw;
+  height: auto;
+  min-height: 300px;
+}
+
+.gear-crane-container, .gear-additions-container, .gear-heads-container {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+section#additions-section {
+  background-color: #58595B;
+}
+
+ul.gear-lists {
+  width: fit-content;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+li.gear1, li.gear2 {
+  border-bottom: 1px black dashed;
+  padding: 10px 0;
+  background-color: none;
+}
+
+li.gear1 button, li.gear2 button {
+  font-size: 1.125rem;
+  font-family: 'futura';
+  border: none;
+}
+
+li.gear1 button {
+  color: #E53567;
+  background-color: white;
+}
+
+li.gear2 button {
+  color: white;
+  background-color: #58595B;
+}
+
+div#gear-email-tag-container {
+  display: none;
+}
+
+/* -- Popup Customizations -- */ 
+
+div.pum div.theme-151 {
+  border: 20px grey solid;
+  font-size: 1.125rem;
+  font-family: 'Futura';
+}
+
+div.pum-theme-151 div{
+  text-align: center;
+}
+
+div.crane-tagline p{
+  color: #E53567;
+  padding-bottom: 15px;
+}
+
+div.grid-odd {
+  background-color: #58595B;
+}
+
+div.grid-even {
+  background-color: #B3B3B3;
+}
+
+div.grid-odd, div.grid-even {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  max-width: 80%;
+  margin: auto;
+}
+
+div.grid-odd p, div.grid-even p {
+  max-width: 50%;
+}
+
+div.crane-additional-notes {
+  width: 80%;
+  margin: 20px auto;
+}
+
+div.crane-final-notes {
+  width: 80%;
+  margin: auto;
+}
 
 /*----------------------------------- Responsive Styles -----------------------------------------*/
 
@@ -425,10 +583,7 @@ div.button-div a {
   .center {
     width: 100%;
   }
-  .container {
-    width: auto;
-    padding: 0 20px;
-  }
+ 
   .footer {
     padding-bottom: 30px;
   }
@@ -484,7 +639,6 @@ div.button-div a {
   }
   .site-main {
     width: auto;
-    margin: 0;
     padding: 0 0 20px;
     float: none;
   }
@@ -792,13 +946,13 @@ section.project-types {
   margin-top: 150px;
 }
 
-h2#project-header {
+h2 {
   font-size: 2.6rem;
   margin-bottom: 50px;
   padding: 10px;
 }
 
-h2#project-header:before {
+h2:before {
   margin-left:  -23px;
 }
 
@@ -1121,7 +1275,7 @@ div.footer-contact p {
     margin-bottom: 50px;
   }
 
-  h2, h2#project-header {
+  h2 {
     font-size: 3.75rem;
     padding: 15px;
   }

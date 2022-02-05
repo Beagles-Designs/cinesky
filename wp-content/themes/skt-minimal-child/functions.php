@@ -18,6 +18,9 @@ function skt_minimal_child_scripts(){
 }
 add_action( 'wp_enqueue_scripts', 'skt_minimal_child_scripts' ); 
 
+// wp_enqueue_script( 'my-script', get_template_directory_uri() . 'custom.js', array(), true ); //
+
+
 // Create Custom Posts Types
 
 function create_custom_post_types() {

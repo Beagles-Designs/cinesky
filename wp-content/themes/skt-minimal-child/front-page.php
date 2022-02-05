@@ -95,7 +95,7 @@ get_header(); ?>
 
 <section class="project-types main-content">
     <div class='site-content'>
-        <h2 id="project-header">Project Types</h2>
+        <h2>Project Types</h2>
 
         <ul class="homepage-project-types">
             <?php query_posts('posts_per_page=3&post_type=project_types'); ?>
