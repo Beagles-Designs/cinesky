@@ -29,8 +29,10 @@
         
       </div><!-- .site-info -->
       <div id="copyright-area">
-        <p>Copyright<p>
-        <p>Beagle's Designs 2022</p>
+        <div class="maxwidth copyright-area-small">
+          <p>Copyright</p>
+          <p>Beagle's Designs 2022</p>
+        </div>
       </div>
     </footer><!-- #colophon -->
 

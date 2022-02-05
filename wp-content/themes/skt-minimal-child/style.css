@@ -13,9 +13,8 @@ Cinesky Theme is based on SKT Minimal theme(SKT Minimal 2021 is distributed unde
 
 /*  ------ General Page Settings ------ */
 
-.page-header, .site-content, #navigation, .site-footer {
+.page-header, .site-content, #navigation, .site-footer, .container {
    width: 90%;
-   max-width: 1300px;
    margin: 0 auto;
   }
 
@@ -25,12 +24,16 @@ div#primary {
 
 .main-content {
     width: 100%;
-    max-width: 1300px;
+    margin: auto;
 }
 
 body {
     font-family: "Futura";
     color: black;
+}
+
+header, h1, div#homepage-headline-clear, section.project-types, div.site-info, div.maxwidth {
+  max-width: 1300px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -104,29 +107,31 @@ a.quote-contact:after, h5:after, h2#project-header:after {
 
 footer.site-footer {
   width: 100%;
+  border-top: 1px #E53567 dashed;
 }
+
 
 div.site-info {
     display: flex;
     flex-direction: row;
+    margin: auto;
+    
 }
 
 nav.footer-menu-navigation {
     width: 38%;
+    border-right: 1px #E53567 dashed;
 }
 
 div.footer-contact {
     width: 62%;
     text-align: center;
-    border-top: 1px #E53567 dashed;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 div.menu-footer_menu-container {
-    border-top: 1px #E53567 dashed;
-    border-right: 1px #E53567 dashed;
     padding: 20px 10%;
 }
 
@@ -144,12 +149,17 @@ div#copyright-area {
   text-align: center;
   border-top: 1px black solid;
   width: 100vw;
+}
+
+div.copyright-area-small {
   display: flex;
   flex-direction: row;
+  margin: auto;
+  justify-content: center;
 }
 
 div#copyright-area p {
-  margin: 10px auto 15px auto;
+  margin: 15px 10px;
   font-size: .75em;
   color: lightgrey; 
 
@@ -187,6 +197,7 @@ div#homepage-headline-clear {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin: auto;
 }
 
 div.homepage-headline-container h2 {
@@ -629,7 +640,7 @@ div.footer-logo {
 
 /* ------------------------------Tablet View ---------------------------------------*/
 
-@media screen and (max-width:1279px) and (min-width:768px) {
+@media screen and (min-width:768px) {
 
 /* ------ Main Changes ------------ */
 
@@ -694,9 +705,11 @@ p {
   .main-navigation ul li a{
       line-height:inherit;
    }
-  .main-navigation{
-      display:block;
-  }
+
+.main-navigation ul li a:before {
+  top:  -9px;
+}
+
   #navigation{
       float:none;
       width:100%;
@@ -726,7 +739,6 @@ p {
 
 div.footer-logo {
   display: initial;
-  border-top: 1px #E53567 dashed;
   border-right: 1px #E53567 dashed;
 }
 
@@ -846,6 +858,7 @@ h3#unique {
     width: auto;
     padding: 0 20px;
   }
+
   .logo {
     width: auto;
     float: left;
@@ -1054,6 +1067,8 @@ h3#unique {
 /* ------------------------------Desktop View ---------------------------------------*/
 
 @media screen and (min-width:1280px) {
+    
+/* ---- Desktop Header Settings ---*/
     .menu-toggle {
         display: none;
     }
@@ -1061,12 +1076,168 @@ h3#unique {
     .main-navigation ul {
         display: flex;
     }
+
+    .header .container {
+      display: flex;
+      align-items: center;
+      width: 80%;
+    }
+
+    .main-navigation {
+      font-size: 1.5rem;
+    }
+
+    .main-navigation ul li a:before {
+      top: -17px;
+    }
+
+
+/* ---- Desktop Footer Settings ---*/ 
+
+ul#menu-footer_menu {
+  flex-direction: row;
+  justify-content: space-around;
+}   
+
+div.menu-footer_menu-container {
+  padding: 6%;
 }
 
+nav.footer-menu-navigation {
+  padding-top: 15px;
+}
+
+div.footer-contact p {
+  padding-bottom: 10px;
+}
+
+/* ---- Desktop General Settings ---*/
+
+  h1 {
+    font-size: 3.5rem;
+    max-width: 75%;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+
+  h2, h2#project-header {
+    font-size: 3.75rem;
+    padding: 15px;
+  }
+
+  h5 {
+    font-size: 3rem;
+    padding: 5px 10px;
+  }
+
+/* ---- Desktop Homepage Settings ---*/
+
+  .homepage-hero-container {
+    min-height: 750px;
+  }
+
+  div.homepage-headline-container {
+    top: 75%;
+    padding: 50px 0;
+  }
+
+  .boom-travel-graphic {
+    top: 0%;
+    left: 49px;
+  }
+
+  .head-rotation-graphic {
+    bottom: -7%;
+  }
+
+  div.homepage-headline-container h2 {
+    font-size: 2rem;
+    max-width:  80%;
+    line-height: 3rem;
+    font-weight: bold;
+  }
+
+  div.homepage-headline-container a {
+    font-size: 2rem;
+    padding: 5px 10px;
+  }
+
+  a.quote-contact:before {
+    margin-left: -21px;
+  }
+
+  div.crane-hero-image {
+    min-height: 650px;
+  }
+
+  div.homepage-crane-options {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    bottom: -40%;
+  }
+
+  h5:before {
+    margin-left:  -24px;
+    bottom: -20px;
+  }
+
+  h5:after {
+    bottom: -20px;
+  }
+
+  div.crane-styles {
+    margin-top: 30px;
+  }
+
+  h4.gear-title {
+    font-size: 2rem;
+    padding-bottom: 10px;
+  }
+
+  p.gear-homepage-specs {
+    font-size: 1.5rem;
+  }
+
+  p#hp-gear-link, p#hp-gear-link a {
+    font-size: 2rem;
+    line-height: 3.5rem;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: normal;
+  }
+
+  p#hp-gear-link a {
+    border-bottom: 2px solid #E53567;
+
+  }
+
+  section.project-types {
+    margin-top: 350px;
+  }
+
+  li.featured-work-individual {
+    margin: 0 10px;
+  }
+
+  ul.homepage-project-types {
+    margin-bottom: 75px;
+    margin-top: 75px;
+  }
+
+  h3#unique {
+    font-size: 2.625rem;
+  }
+
+  div.button-div {
+    margin: 50px auto 75px auto;
+  }
+
+} /* ---> End Desktop General Settings */
+
 @media(max-width:1024px) {
-    .main-navigation {
-        width: 100%;
-    }
+
 
     .main-navigation button.menu-toggle {
         width: 40px;
@@ -1173,3 +1344,18 @@ h3#unique {
     }
     .main-navigation ul ul li a{color:#aa942e;}
 }
+
+/* --------- Large Screen Adjustements ------------- */
+
+@media screen and (min-width:1400px) {
+
+
+  .homepage-hero-container {
+    width: 100vw;
+  }
+
+  div.homepage-crane-options {
+    max-width: 950px;
+  }
+
+} /* -- end Large Screen Adjustements -- */ 
