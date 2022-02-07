@@ -17,18 +17,29 @@
 get_header(); ?>
 
     <div id="primary" class="site-content sidebar">
-        <div class="main-content" role="main">
+        <div class="services-main-content" role="main">
             <section class="services-intro-content">
-                <h2>Project Types</h2>
-                <h3>If you have a camera...</h3>
-                <h3>We can swing it.</h3>
-                <p>Live Events</p>
-                <p>Concerts</p>
-                <p>Sports</p>
-                <p>Music Videos</p>
-                <p>Narrative</p>
-                <p>Feature Films</p>
-                <p>Digital Content</p>
+                <?php while ( have_posts()) : the_post();  ?>   
+                    <?php  
+                        $boom_travel_url = get_field('boom_travel');
+                        $size = 'full';
+                    ?> 
+                    <h2>Project Types</h2>
+                    <p class="services-tagline">You bring the vision,</p>
+                    <p class="services-tagline">We'll provide the execution. </p>
+                    <div id="services-headline-clear">    
+                        <div class="boom-travel-graphic services-boom-graphic">
+                            <img src="http://localhost:8888/cinesky/wp-content/uploads/2022/02/boomtravel-1.png">
+                        </div>
+                        <p>Live Events</p>
+                        <p>Concerts</p>
+                        <p>Sports</p>
+                        <p>Music Videos</p>
+                        <p>Narrative</p>
+                        <p>Feature Films</p>
+                        <p>Digital Content</p>
+                    </div>    
+                <?php endwhile ?>    
             </section>
 
             <section class="reel-section site-content">
@@ -37,7 +48,7 @@ get_header(); ?>
             </section>        
 
             <section class="past-projects-main">
-                <h2>Past Projects</h2>
+                <h3 class="subtitle">Past Projects</h3>
                 <ul class="past-projects-content">
                      <?php query_posts('post_type=past_projects'); ?>
                             <?php while ( have_posts() ) : the_post();  
@@ -52,8 +63,9 @@ get_header(); ?>
                                 $similar2 = get_field('similar_projects_2');
                                 $similar3 = get_field('similar_projects_3');
                                 $link = get_field('project_links');
+                                $i++;
                             ?>
-                            <li class="past-projects-individual">
+                            <li class="past-projects-individual <?php if ($i %2 == 0) {echo 'li-right';} else { echo 'li-left';} ?>">    
                                 <article class="past-projects">
                                     <div class="case-study-images archive-case-study-images">
                                         <a href="<?php echo $link ?>" target="_blank">
@@ -61,65 +73,67 @@ get_header(); ?>
                                                 echo wp_get_attachment_image( $image, $size);
                                             } ?>
                                         </a> 
-                                    <h2><a href="<?php echo $link ?>" target="_blank"><?php the_title(); ?></a></h2>
+                                        <div class="project-caption services-caption">
+                                            <h3 class="caption-title services-h3"><a href="<?php echo $link ?>" target="_blank"><strong><?php the_title(); ?></strong></a></h3>
+                                            <h4><?php echo $type ?></h4>
+                                        </div>
+                                    </div>    
 
                                     <aside class="gear-used-sidebar">
-                                        <h5>Gear Used</h5>
-                                        <ul class="gear-list-main">
-                                            <li><?php echo $gear1 ?></li>
-                                             <li style="display:<?= $showliitem?>"><?php 
-                                                    $showliitem = 'none';
-                                                    if($gear2) { 
-                                                        $showliitem = 'block';
-                                                        echo $gear2;
-                                                }?>
-                                            </li>
-                                             <li style="display:<?= $showliitem?>"><?php 
-                                                    $showliitem = 'none';
-                                                    if($gear3) { 
-                                                        $showliitem = 'block';
-                                                        echo $gear3;
-                                                }?>
-                                            </li>
-                                            <li style="display:<?= $showliitem?>"><?php 
-                                                    $showliitem = 'none';
-                                                    if($gear4) { 
-                                                        $showliitem = 'block';
-                                                        echo $gear4;
-                                                }?>
-                                            </li>
-                                        </ul>  
+                                        <div id="dashed-line-2"></div>
+                                        <h6>Gear Used</h6>
+                                        <p><?php echo $gear1 ?></p>
                                     </aside>
 
                                     <aside class="similar-sidebar">
-                                        <h5>Similar Projects</h5>
+                                        <div id="similar-aside-top-bar"></div>
+                                        <div id="dashed-line-3"></div>
+                                        <h6>Similar Projects</h6>
                                         <ul class="similar-list-main">
-                                            <li><?php echo $similar1 ?></li>
+                                            <li>
+                                                <div>
+                                                    <p class="text-left"><?php echo $similar1 ?></p>
+                                                    <div class="dashed-line-1"></div>
+                                                    <p class="text-right"><?php echo $gear2 ?></p>
+                                                </div>
+                                            </li>
                                              <li style="display:<?= $showliitem?>"><?php 
                                                     $showliitem = 'none';
                                                     if($similar2) { 
                                                         $showliitem = 'block';
-                                                        echo $similar2;
                                                 }?>
+                                                <div> 
+                                                   <p class="text-left"><?php echo $similar2 ?></p>
+                                                   <div class="dashed-line-1"></div>
+                                                   <p class="text-right"><?php echo $gear3 ?></p>
+                                                </div>   
                                             </li>
                                              <li style="display:<?= $showliitem?>"><?php 
                                                     $showliitem = 'none';
                                                     if($similar3) { 
                                                         $showliitem = 'block';
-                                                        echo $similar3;
                                                 }?>
+                                                <div> 
+                                                   <p class="text-left"><?php echo $similar3 ?></p>
+                                                   <div class="dashed-line-1"></div>
+                                                   <p class="text-right"><?php echo $gear4 ?></p>
+                                                </div> 
                                             </li>
                                         </ul>   
                                     </aside>
                                 </article>
                             </li>
+
                     <?php endwhile; ?>  
                 </ul>          
             </section> 
 
             <section class="services-closing">
-                <h3>Every Project is Unique.</h3>
-                <a class='button' href="mailto:sarah.e.beagle@gmail.com?subject=Interested Production for a Cinesky Quote">Email Now</a>
+                <h3 id="unique">Every project is unique.</h3>
+                    <p>Call or email for a quote to meet your project's needs.</p>
+                    <div class='button-div'>
+            <a class='button' href="mailto:sarah.e.beagle@gmail.com?subject=Interested Production for a Cinesky Quote">Email Now</a>
+        </div>
             </section>   
    
         </div><!-- .main-content -->

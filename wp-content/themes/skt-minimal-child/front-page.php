@@ -109,7 +109,7 @@ get_header(); ?>
                         <figure>
                             <a href="<?php echo site_url('/services/') ?>"><?php echo wp_get_attachment_image($image1, $size); ?></a>
                             <div class="project-caption">
-                                <h3><a href="<?php the_permalink(); ?>"><strong><?php the_title(); ?></strong></a></h3>
+                                <h3 class="caption-title"><a href="<?php the_permalink(); ?>"><strong><?php the_title(); ?></strong></a></h3>
                                 <h4><?php echo $subtitle ?></h4>
                             </div>
                         </figure>

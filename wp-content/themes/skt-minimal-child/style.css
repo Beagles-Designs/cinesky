@@ -41,16 +41,21 @@ body {
     color: black;
 }
 
-header, h1, div#homepage-headline-clear, section.project-types, div.site-info, div.maxwidth {
+header, h1, div#homepage-headline-clear, div#services-headline-clear, section.project-types, div.site-info, div.maxwidth {
   max-width: 1300px;
 }
 
-div.maxwidth {
+div.maxwidth, div.services-main-content {
   width: 90%;
   margin: auto;
+  max-width: 1300px;
 }
 
-h1, h2, h3, h4, h5 {
+div.services-main-content {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
     font-family: 'copperplate';
     font-weight: normal;   
     width: fit-content; 
@@ -59,7 +64,7 @@ h1, h2, h3, h4, h5 {
 
 h2 {
   padding: 0 10px;
-  font-weight: bold;
+  font-weight: medium;
   font-size: 2.6rem;
   margin-bottom: 30px;
 }
@@ -71,8 +76,12 @@ h3 {
 
 h3.subtitle {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: medium;
   padding: 30px 5px 2px 5px;
+}
+
+h3.caption-title a {
+  font-size: 100%;
 }
 
 h5 {
@@ -80,6 +89,18 @@ h5 {
     color: #ffffff;
     text-align: center;
     padding-top: 10px;
+    font-weight: medium;
+}
+
+h6 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+p.services-tagline {
+  font-size: 1.75rem;
+  padding: 10px 0;
 }
 
 ul {
@@ -89,8 +110,7 @@ ul {
 }
 
 /* ----- PINK UNDERLINE FOR TITLES ------- */
-a.quote-contact, h5, h2, h3.subtitle {
-    font-weight: medium;
+a.quote-contact, h5, h2, h3.subtitle, h6 {
     position: relative;
     border-bottom: 2px solid #E53567;
     padding-bottom: 4px;
@@ -102,6 +122,14 @@ a.quote-contact:before, h5:before, h2:before, h3.subtitle:before {
     content: "|";
     bottom: -9px;
     color: #E53567;
+}
+
+section.services-intro-content h2:before, section.services-intro-content h2:after {
+  bottom: -18px;
+}
+
+section.services-intro-content h2:before {
+  margin-left: -19px;
 }
 
 h3.subtitle:before {
@@ -238,7 +266,7 @@ div.homepage-headline-container {
     width: 100%;
 }
 
-div#homepage-headline-clear {
+div#homepage-headline-clear, div#services-headline-clear {
   position: relative;
   width: 100%;
   height: 100%;
@@ -370,7 +398,7 @@ section.project-types {
 }
 
 
-li.featured-work-individual figure {
+li.featured-work-individual figure, div.case-study-images {
     position: relative;
     display: inline-block;
     margin-bottom: 20px;
@@ -378,11 +406,11 @@ li.featured-work-individual figure {
     border-radius: 50%;
     height: 200px;
     width: 200px;
+    z-index: 1;
 }
 
 div.project-caption {
-    background-color: black;
-    opacity: 66%;
+    background: linear-gradient(to bottom, rgba(0,0,0,.66), rgba(0,0,0,1));
     position: absolute;
     bottom: 0px;
     width: 100%;
@@ -391,27 +419,28 @@ div.project-caption {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 75px;
+    height: 39%;
+    justify-content: space-evenly;
 }
 
 div.project-caption h3 {
-    margin-bottom: 0;
+    margin: 0 10%;
+    font-size: 1rem;
+}
+
+div.project-caption h3 strong {
+    color: #E53567;
+    font-weight: normal;
 }
 
 div.project-caption h4 {
     margin-bottom:  33px;
     width: 50%;
-}
-
-div.project-caption h3 strong {
-    color: #E53567;
-    font-size: 1.25em;
-    font-weight: normal;
-}
-
-div.project-caption h4 {
     color: white;
+    margin: 5px auto 0 auto;
 }
+
+
 
 h3#unique {
     font-family: 'futura';
@@ -591,6 +620,125 @@ div#gear-spacer {
   height: 20px;
 }
 
+/* ------ SERVICES PAGE CONTENT      ------------ */ 
+
+div#services-headline-clear {
+  padding: 30px 0 15px 0;
+  border-bottom: 1px #E53567 dashed;
+}
+
+div.services-boom-graphic {
+  top: 23%;
+  left: -35px;
+}
+
+section.reel-section {
+  margin-bottom: 30px;
+}
+
+.reel-section p {
+  margin: 30px auto;
+}
+
+article.past-projects {
+  margin: 30px auto;
+}
+
+aside.gear-used-sidebar {
+  margin-left: 60%;
+  border-right: 1px #E53567 dashed;
+  border-top: 1px #E53567 dashed;
+  border-left: 1px #E53567 dashed;
+  position: relative;
+  width: fit-content;
+  padding: 10px 20px;
+}
+
+aside.similar-sidebar {
+  width: 100%;
+  position: relative;
+}
+
+aside.similar-sidebar h6 {
+  margin-left: 20px;
+  float: left;
+
+
+}
+
+div.services-caption h3 {
+  font-size: 82%;
+  padding-top: 5px;
+}
+
+ul.similar-list-main {
+  margin-left: 20px;
+}
+
+ul.similar-list-main li {
+  padding-right: 6%;
+}
+
+ul.similar-list-main li div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+ul.similar-list-main li div p.text-left {
+  width: 50%;
+  font-size: 80%;
+}
+
+ul.similar-list-main li div p.text-right {
+  width: 30%;
+  font-size: 80%;
+}
+
+div.dashed-line-1 {
+  height: 0;
+  border-bottom: 1px #E53567 dashed;
+  width: 20%!important;
+}
+
+div#dashed-line-2 {
+    border-right: 1px #E53567 dashed;
+    border-top: 1px #E53567 dashed;
+    position: absolute;
+    top: -93px;
+    height: 90px;
+    width: 6vw;
+    left: 6vw;
+    z-index: -1;
+}
+
+div#dashed-line-3 {
+    border-left: 1px #E53567 dashed;
+    border-top: 1px #E53567 dashed;
+    position: absolute;
+    top: -200px;
+    height: 200px;
+    width: 26vw;
+    left: 6vw;
+    z-index: -1;
+}
+
+div#similar-aside-top-bar {
+  border-top: 1px #E53567 dashed;
+  border-left: 1px #E53567 dashed;
+  position: absolute;
+  top: 0;
+  width: 40%;
+  height: 50px;
+}
+
+section.services-closing {
+  margin-top: 30px;
+}
+
 /*----------------------------------- Responsive Styles -----------------------------------------*/
 
 /* Mobile Portrait View */
@@ -600,11 +748,16 @@ div#gear-spacer {
     max-width: 80px;
   }
 
+  div.services-boom-graphic img {
+    max-width: 120px;
+  }
+
   div.head-rotation-graphic img {
     max-width: 60px;
   }
 
 }
+
 
 @media screen and (max-width:767px) {
   * {
@@ -829,6 +982,11 @@ div.footer-logo {
       font-size:40px;
       padding-left:55px;
    }
+
+  ul.similar-list-main li {
+    padding-right: 20%;
+  }
+
 }
 
 
@@ -864,6 +1022,14 @@ h2:before {
 
 section.site-main h2:before, section.site-main h2:after{
   bottom: -11px;
+}
+
+section.services-intro-content h2:before, section.services-intro-content h2:after {
+    bottom: -12px;
+}
+
+p.services-tagline {
+  font-size: 2rem;
 }
 
 
@@ -1027,7 +1193,6 @@ div.project-caption {
 
 div.project-caption h3 {
   font-size: 1.125rem;
-  padding-bottom: 5px;
   font-weight: bold;
 }
 
@@ -1091,6 +1256,109 @@ div#gear-email-tag-container {
   margin: 50px auto 30px auto;
 }
 
+/*---- Services Page Tablet Settings -------*/ 
+
+div#services-headline-clear p {
+  font-size: 1,75rem;
+  padding: 10px 0;
+}
+
+div.services-boom-graphic {
+  left: -81px;
+}
+
+div.boom-travel-graphic img {
+  max-width: 200px;
+}
+
+div#services-headline-clear {
+  padding: 30px 0;
+}
+
+.reel-section p {
+  line-height: 1.5em;
+}
+
+article.past-projects {
+    margin: 50px auto;
+}
+
+div.case-study-images {
+  height: 250px;
+  width: 250px;
+}
+
+li.li-left article.past-projects div.case-study-images {
+  margin-right: 75%;
+}
+
+li.li-right article.past-projects div.case-study-images{
+  margin-left: 75%;
+}
+
+div.services-caption h3.services-h3 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+li.li-left article.past-projects aside.gear-used-sidebar {
+  margin-left: 60%;
+}
+
+li.li-left article.past-projects aside.gear-used-sidebar div#dashed-line-2 {
+    width: 43vw;
+    right: 50%;
+    left: initial;
+}
+
+li.li-left article.past-projects aside.similar-sidebar div#dashed-line-3 {
+  top: -172px;
+  border-top: none;
+  height: 172px;
+}
+
+li.li-right article.past-projects aside.gear-used-sidebar div#dashed-line-2 {
+  border-right: none;
+  border-left: 1px #E53567 dashed;
+  left: 50%;
+  width: 16vw;
+  height: 80px;
+  top: -80px;
+}
+
+li.li-right article.past-projects aside.similar-sidebar div#dashed-line-3 {
+    height: 210px;
+    top: -210px;
+    width: 63vw;
+}
+
+li.li-right article.past-projects aside.similar-sidebar ul.similar-list-main li {
+  padding-right: 0;
+}
+
+li.li-right article.past-projects aside.gear-used-sidebar {
+  margin-right: 30%;
+  margin-left: auto;
+}
+
+li.li-left article.past-projects aside.similar-sidebar {
+  width: 82%;
+}
+
+li.li-right article.past-projects aside.similar-sidebar {
+    width: 64%;
+}
+
+aside.gear-used-sidebar p {
+  font-size: 1rem;
+}
+
+ul.similar-list-main li div p.text-left, ul.similar-list-main li div p.text-right  {
+  font-size: 1rem;
+}
 
 
 } /*  End Main Tablet Formatting */ 
@@ -1396,6 +1664,10 @@ div.footer-contact p {
     margin-left: -26px;
   }
 
+  section.services-intro-content h2:before {
+    margin-left: -29px;
+  }
+
   h3.subtitle:before {
     margin-left: -20px;
     bottom: -18px;
@@ -1404,6 +1676,18 @@ div.footer-contact p {
   h3.subtitle:after {
     bottom: -18px;
   }
+
+  div#services-headline-clear p, .reel-section p {
+    font-size: 1.5rem;
+  }
+
+section.services-closing {
+    margin: 100px auto 50px auto;
+}
+
+section.services-closing p {
+  font-size: 1.5rem;
+}
 
 
 /* ---- Desktop Homepage Settings ---*/
@@ -1508,6 +1792,38 @@ div.footer-contact p {
   div.button-div {
     margin: 20px auto 30px auto;
   }
+
+
+/* ---> Services Desktop Settings */
+
+   .reel-section p {
+    max-width: 40%;
+  }
+
+  div.services-boom-graphic {
+    left: -92px;
+}
+
+  h6 {
+    font-size: 2rem;
+  }
+
+ aside.gear-used-sidebar p, ul.similar-list-main li div p.text-left, ul.similar-list-main li div p.text-right {
+    font-size: 1.5rem;
+  }
+
+  div.case-study-images {
+    height: 300px;
+    width: 300px;
+}
+
+  li.li-left article.past-projects aside.similar-sidebar {
+    width: 78%;
+}
+
+  li.li-right article.past-projects aside.similar-sidebar {
+    width: 67%;
+}
 
 } /* ---> End Desktop General Settings */
 
