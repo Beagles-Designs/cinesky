@@ -21,7 +21,7 @@ get_header(); ?>
                      
                 <?php endwhile; // end of the loop. ?>  
         </section>        
-        <div class="crane-image" style='background-image:url(http://localhost:8888/cinesky/wp-content/uploads/2021/12/crane_hero.jpeg); background-size: cover; background-repeat: no-repeat; background-position: center;'>
+        <div class="crane-image" style='background-image:url(http://localhost:8888/cinesky/wp-content/uploads/2022/02/IMG_5047-scaled.jpg); background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed;'>
         </div>    
         <div class="gear-crane-container maxwidth" id="crane-section">
             <h3 class="subtitle">Cranes</h3>
@@ -73,8 +73,12 @@ get_header(); ?>
             </div>
         <div id="gear-email-tag-container" class='maxwidth'>    
             <h3>Call or Email to discuss your specific needs.</h3>
-            <div class="button-div">    
-                <a class='button' href="mailto:sarah.e.beagle@gmail.com?subject=Interested Production for a Cinesky Quote">Email Now</a>      
+            <div class="button-div"> 
+                <?php 
+                    $email = get_field("main_email", 325);
+                    $newsubject = get_field("subject_text", 325);
+                ?>   
+                <a class='button' href="mailto:<?php echo $email ?>?subject=<?php echo $newsubject ?>">Email Now</a>     
             </div>
         </div>
         
@@ -84,7 +88,7 @@ get_header(); ?>
                     <div id="popup-email">
                         <p>Call or email to discuss your specific needs</p>
                            
-                            <a class='button' href="mailto:sarah.e.beagle@gmail.com?subject=Interested Production for a Cinesky Quote"><button class="popmake-227"><i class="fas fa-envelope"></i></button></a>
+                            <a class='button' href="mailto:<?php echo $email ?>?subject=<?php echo $newsubject ?>"><button class="popmake-227"><i class="fas fa-envelope"></i></button></a>
                         
                     </div>
         </div>

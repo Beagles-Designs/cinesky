@@ -88,7 +88,7 @@ h5 {
     font-size: 1.5em;
     color: #ffffff;
     text-align: center;
-    padding-top: 10px;
+    padding: 10px 3px 2px 3px;
     font-weight: medium;
 }
 
@@ -118,10 +118,26 @@ a.quote-contact, h5, h2, h3.subtitle, h6 {
 
 a.quote-contact:before, h5:before, h2:before, h3.subtitle:before {
     position: absolute;
-    margin-left: -9px;
     content: "|";
-    bottom: -9px;
     color: #E53567;
+}
+
+div.site-content h2:before {
+  margin-left: -20px;
+  bottom: -19px;
+}
+
+div.site-content h2:after {
+  bottom: -19px;
+}
+
+div#homepage-headline-clear h2:before {
+  margin-left:  -15px;
+  bottom: -9px;
+  }
+
+div#homepage-headline-clear h2:after {
+  margin-left: 40px;
 }
 
 section.services-intro-content h2:before, section.services-intro-content h2:after {
@@ -130,6 +146,11 @@ section.services-intro-content h2:before, section.services-intro-content h2:afte
 
 section.services-intro-content h2:before {
   margin-left: -19px;
+}
+
+a.quote-contact:before {
+  bottom: -9px;
+  margin-left: -10px;
 }
 
 h3.subtitle:before {
@@ -146,13 +167,21 @@ section.site-main h2:after {
   bottom: -18px;
 }
 
-
 a.quote-contact:after, h5:after, h2:after, h3.subtitle:after {
     position: absolute;
     content: "|";
-    margin-right: -5px;
     bottom: -9px;
     color: #E53567;
+}
+
+div.homepage-crane-options h5:before {
+    bottom: -12px;
+    margin-left: -10px;
+}
+
+div.homepage-crane-options h5:after {
+  bottom: -12px;
+  margin-left: -2px;
 }
 
 h3.subtitle:after {
@@ -285,6 +314,7 @@ div.homepage-headline-container h2 {
 div.homepage-headline-container h2, div .homepage-headline-container a {
     margin: 30px auto;
     max-width: 66%;
+    width: fit-content;
 }
 
 div .homepage-headline-container a {
@@ -407,7 +437,20 @@ li.featured-work-individual figure, div.case-study-images {
     height: 200px;
     width: 200px;
     z-index: 1;
+    background-color: black;
 }
+
+li.featured-work-individual figure a img {
+  max-width: none;
+}
+
+
+li.past-projects-individual article div.case-study-images a.past-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 
 div.project-caption {
     background: linear-gradient(to bottom, rgba(0,0,0,.66), rgba(0,0,0,1));
@@ -473,6 +516,11 @@ ul#menu-gear_subsection {
 
 }
 
+ul#menu-gear_subsection li {
+  width:  33%;
+  text-align: center;
+}
+
 div.sticky-email {
   position: -webkit-sticky; /*Safari */
   position:  sticky;
@@ -511,6 +559,8 @@ div#popup-email {
 
 nav.gear-menu-navigation {
   padding-bottom:  20px;
+  max-width: 800px;
+  margin: auto;
 }
 
 div.crane-image {
@@ -989,6 +1039,47 @@ div.footer-logo {
 
 }
 
+@media screen and (min-width: 392px) {
+
+  div#homepage-headline-clear h2:before {
+    margin-left:  -31px;
+  }
+
+  div#homepage-headline-clear h2:after {
+    margin-left: 0;
+  }
+
+}
+
+@media screen and (min-width: 439px) {
+
+  div#homepage-headline-clear h2:before {
+    margin-left:  -13px;
+  }
+
+  div#homepage-headline-clear h2:after {
+    margin-left: 21px;
+  }
+
+}
+
+@media screen and (min-width: 500px) {
+  
+  div#homepage-headline-clear h2:before {
+    margin-left:  -15px;
+  }
+
+  div#homepage-headline-clear h2:after {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 620px) {
+
+  div#homepage-headline-clear h2:after {
+    margin-left: 80px;
+  }
+}
 
 /* ------------------------------Tablet View ---------------------------------------*/
 
@@ -1012,6 +1103,7 @@ h2 {
   line-height: 1.5rem;
 }
 
+
 p {
   font-size: 1.75rem;
 }
@@ -1027,6 +1119,7 @@ section.site-main h2:before, section.site-main h2:after{
 section.services-intro-content h2:before, section.services-intro-content h2:after {
     bottom: -12px;
 }
+
 
 p.services-tagline {
   font-size: 2rem;
@@ -1125,18 +1218,40 @@ body.wp-custom-logo .logo {
 
 div.homepage-headline-container {
    padding: 50px 0;
-   top: 65%;
+   top: 80%;
+}
+
+div#homepage-headline-clear div.boom-travel-graphic img {      
+  max-width: 150px;
 }
 
 div.homepage-headline-container h2 {
   max-width: 80%;
-  font-size: 1.5rem;
-  width: 80%;
+  font-size: 1.25rem;
   line-height: 2.5rem;
+}
+
+div#homepage-headline-clear h2:before {
+  margin-left:  -16px;
+  bottom: -19px;
+}
+
+div#homepage-headline-clear h2:after {
+  margin-left: 92px;
+  bottom: -19px;
 }
 
 div.homepage-headline-container a {
   font-size: 1.5rem;
+  padding: 2px 10px;
+}
+
+a.quote-contact:before {
+  margin-left: -16px;
+}
+
+a.quote-contact:after {
+  margin-left: 5px;
 }
 
 
@@ -1154,6 +1269,7 @@ div.homepage-crane-options {
     right: 0;
     bottom: -20%;
     max-width: 850px;
+    background: linear-gradient(to bottom, rgba(88,89,91,.66), rgba(88,89,91,1) 61%);
 }
 
 section.project-types {
@@ -1167,6 +1283,13 @@ h2 {
 }
 
 
+section.project-types div.site-content h2:before {
+  bottom: -11px;
+ }
+
+ section.project-types div.site-content h2:after {
+  bottom: -11px;
+ }
 
 ul.homepage-project-types {
   display: flex;
@@ -1185,6 +1308,11 @@ li.featured-work-individual figure {
   width: 300px;
   height: 300px;
   margin: auto;
+}
+
+
+li.featured-work-individual figure a img {
+  min-height: 200px;
 }
 
 div.project-caption {
@@ -1206,11 +1334,6 @@ h3#unique {
 
 /* ------ Gear Page Tablet Settings   ------ */ 
 
-
-ul#menu-gear_subsection li {
-  width:  33%;
-  text-align: center;
-}
 
 div.theme-151 {
   position: absolute!important;
@@ -1267,8 +1390,8 @@ div.services-boom-graphic {
   left: -81px;
 }
 
-div.boom-travel-graphic img {
-  max-width: 200px;
+div.boom-travel-graphic img {      /*------- ADJUST TO EFFECT JUST SERVICES IMG BACK TO 200PX   ------ */
+  max-width: 150px;
 }
 
 div#services-headline-clear {
@@ -1717,6 +1840,16 @@ section.services-closing p {
     font-weight: bold;
   }
 
+  div#homepage-headline-clear h2:after {
+    margin-left: 148px;
+    bottom: -22px;
+}
+
+div#homepage-headline-clear h2:before {
+    margin-left: -22px;
+    bottom: -22px;
+}
+
   div.homepage-headline-container a {
     font-size: 2rem;
     padding: 5px 10px;
@@ -1734,16 +1867,19 @@ section.services-closing p {
     padding-top: 30px;
     padding-bottom: 50px;
     bottom: -40%;
+     background: linear-gradient(to bottom, rgba(88,89,91,.66), rgba(88,89,91,1) 46%);
   }
 
-  h5:before {
-    margin-left:  -24px;
-    bottom: -20px;
-  }
 
-  h5:after {
-    bottom: -20px;
-  }
+ div.homepage-crane-options h5:after {
+    bottom: -22px;
+    margin-left: -2px;
+}
+
+div.homepage-crane-options h5:before {
+    bottom: -22px;
+    margin-left: -24px;
+}
 
   div.crane-styles {
     margin-top: 30px;
@@ -1775,6 +1911,10 @@ section.services-closing p {
   section.project-types {
     margin-top: 350px;
   }
+
+  section.project-types div.site-content h2:before {
+    margin-left: -28px;
+}
 
   li.featured-work-individual {
     margin: 0 10px;
@@ -1823,6 +1963,12 @@ section.services-closing p {
 
   li.li-right article.past-projects aside.similar-sidebar {
     width: 67%;
+}
+
+/* ------ Gear Page Adjustements ------ */
+
+div.crane-image {
+  min-height: 550px;
 }
 
 } /* ---> End Desktop General Settings */

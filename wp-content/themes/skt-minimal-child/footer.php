@@ -23,6 +23,11 @@
         </div> 
 
         <div class="footer-contact">
+          <?php while ( have_posts()) : the_post(); 
+                    $email = get_field("contact_email");
+                ?>
+            <a class='button' href="mailto:<?php echo $email; ?>?subject=Interested Production for a Cinesky Quote">Email Now</a>
+        <?php endwhile; ?>
           <p>CONTACT</p>
           <a href="mailto:sarah.e.beagle@gmail.com?subject=Interested Production for a Cinesky Quote">youremail@gmail.com</a>
         </div>

@@ -68,7 +68,7 @@ get_header(); ?>
                             <li class="past-projects-individual <?php if ($i %2 == 0) {echo 'li-right';} else { echo 'li-left';} ?>">    
                                 <article class="past-projects">
                                     <div class="case-study-images archive-case-study-images">
-                                        <a href="<?php echo $link ?>" target="_blank">
+                                        <a class="past-link" href="<?php echo $link ?>" target="_blank">
                                             <?php if($image) { 
                                                 echo wp_get_attachment_image( $image, $size);
                                             } ?>
@@ -129,11 +129,15 @@ get_header(); ?>
             </section> 
 
             <section class="services-closing">
+                <?php 
+                    $email = get_field("main_email", 325);
+                    $newsubject = get_field("subject_text", 325);
+                ?>
                 <h3 id="unique">Every project is unique.</h3>
                     <p>Call or email for a quote to meet your project's needs.</p>
-                    <div class='button-div'>
-            <a class='button' href="mailto:sarah.e.beagle@gmail.com?subject=Interested Production for a Cinesky Quote">Email Now</a>
-        </div>
+                <div class='button-div'>
+                    <a class='button' href="mailto:<?php echo $email ?>?subject=<?php echo $newsubject ?>">Email Now</a>
+                </div>
             </section>   
    
         </div><!-- .main-content -->

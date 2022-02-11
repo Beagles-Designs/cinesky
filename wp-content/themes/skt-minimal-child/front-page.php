@@ -107,9 +107,9 @@ get_header(); ?>
                     <!-- Loop content here -->
                     <li class="featured-work-individual">
                         <figure>
-                            <a href="<?php echo site_url('/services/') ?>"><?php echo wp_get_attachment_image($image1, $size); ?></a>
+                            <a class="project-type-image" href="<?php echo site_url('/services/') ?>"><?php echo wp_get_attachment_image($image1, $size); ?></a>
                             <div class="project-caption">
-                                <h3 class="caption-title"><a href="<?php the_permalink(); ?>"><strong><?php the_title(); ?></strong></a></h3>
+                                <h3 class="caption-title"><a href="<?php echo site_url('/services/')  ?>"><strong><?php the_title(); ?></strong></a></h3>
                                 <h4><?php echo $subtitle ?></h4>
                             </div>
                         </figure>
@@ -120,7 +120,12 @@ get_header(); ?>
         <h3 id="unique">Every project is unique.</h3>
         <p>Call or email for a quote to meet your project's needs.</p>
         <div class='button-div'>
-            <a class='button' href="mailto:sarah.e.beagle@gmail.com?subject=Interested Production for a Cinesky Quote">Email Now</a>
+            <?php while (have_posts()) : the_post(); 
+                    $email = get_field("main_email", 325);
+                    $newsubject = get_field("subject_text", 325);
+                ?>
+            <a class='button' href="mailto:<?php echo $email ?>?subject=<?php echo $newsubject ?>">Email Now</a>
+        <?php endwhile; ?>
         </div>
     </div>    
 </section>

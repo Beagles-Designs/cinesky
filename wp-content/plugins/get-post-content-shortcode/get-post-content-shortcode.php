@@ -79,6 +79,8 @@ function wde_post_content_field($field)
             'crane_final_notes',
             'additions_tagline',
             'heads_tagline',
+            'main_email',
+            'subject_text',
         )
     );
 
