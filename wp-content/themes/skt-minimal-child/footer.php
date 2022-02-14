@@ -24,12 +24,12 @@
 
         <div class="footer-contact">
           <?php while ( have_posts()) : the_post(); 
-                    $email = get_field("contact_email");
+                    $email = get_field("main_email", 325);
+                    $newsubject = get_field("subject_text", 325);
                 ?>
-            <a class='button' href="mailto:<?php echo $email; ?>?subject=Interested Production for a Cinesky Quote">Email Now</a>
-        <?php endwhile; ?>
           <p>CONTACT</p>
-          <a href="mailto:sarah.e.beagle@gmail.com?subject=Interested Production for a Cinesky Quote">youremail@gmail.com</a>
+          <a href="mailto:<?php echo $email ?>?subject=<?php echo $newsubject ?>"><?php echo $email ?></a>
+           <?php endwhile; ?>
         </div>
         
       </div><!-- .site-info -->
