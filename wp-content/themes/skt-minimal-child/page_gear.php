@@ -20,9 +20,10 @@ get_header(); ?>
                     </div>    
                      
                 <?php endwhile; // end of the loop. ?>  
-        </section>        
-        <div class="crane-image" style='background-image:url(http://localhost:8888/cinesky/wp-content/uploads/2022/02/IMG_5047-scaled.jpg); background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed;'>
-        </div>    
+        </section> 
+        <?php  $gear_image_url = get_field('gear_image', 81); ?>       
+            <div class="crane-image" style='background-image:url(<?php echo $gear_image_url; ?>); background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed;'>
+            </div>    
         <div class="gear-crane-container maxwidth" id="crane-section">
             <h3 class="subtitle">Cranes</h3>
             <p>Click each for additional info</p>

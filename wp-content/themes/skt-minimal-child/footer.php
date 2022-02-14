@@ -27,9 +27,10 @@
                     $email = get_field("main_email", 325);
                     $newsubject = get_field("subject_text", 325);
                 ?>
+          <?php endwhile; ?>      
           <p>CONTACT</p>
           <a href="mailto:<?php echo $email ?>?subject=<?php echo $newsubject ?>"><?php echo $email ?></a>
-           <?php endwhile; ?>
+           
         </div>
         
       </div><!-- .site-info -->

@@ -1,4 +1,4 @@
-<?php
+-<?php
 /**
  * Template Name: Services
  * 
@@ -21,15 +21,14 @@ get_header(); ?>
             <section class="services-intro-content">
                 <?php while ( have_posts()) : the_post();  ?>   
                     <?php  
-                        $boom_travel_url = get_field('boom_travel');
-                        $size = 'full';
+                        $boom_travel_url = get_field('boom_graphic', 111);
                     ?> 
                     <h2>Project Types</h2>
                     <p class="services-tagline">You bring the vision,</p>
                     <p class="services-tagline">We'll provide the execution. </p>
                     <div id="services-headline-clear">    
                         <div class="boom-travel-graphic services-boom-graphic">
-                            <img src="http://localhost:8888/cinesky/wp-content/uploads/2022/02/boomtravel-1.png">
+                            <img src="<?php echo $boom_travel_url; ?>">
                         </div>
                         <p>Live Events</p>
                         <p>Concerts</p>

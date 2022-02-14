@@ -298,7 +298,6 @@ div.homepage-headline-container {
 div#homepage-headline-clear, div#services-headline-clear {
   position: relative;
   width: 100%;
-  height: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
