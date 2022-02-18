@@ -112,6 +112,7 @@ ul {
 }
 
 /* ----- PINK UNDERLINE FOR TITLES ------- */
+
 a.quote-contact, h5, h2, h3.subtitle, h6 {
     position: relative;
     border-bottom: 2px solid #E53567;
@@ -670,12 +671,60 @@ div.crane-tagline p, div#gear-tagline p {
   padding-bottom: 15px;
 }
 
-div.grid-odd {
+
+div.theme-151 div.pum-title {
+  border-bottom: 1.5px #e53567 dashed;
+  padding-bottom: 5px;
+  width: fit-content;
+  margin:  10px auto 10px auto;
+
+}
+
+div.dashed-line-popup {
+  height: 0;
+  border-bottom: 1px #E53567 dashed;
+  width: 15%!important;
+}
+
+
+/*div.grid-odd {
   background-color: #58595B;
 }
 
 div.grid-even {
   background-color: #B3B3B3;
+}*/
+
+div.gear-left {
+  width: 45%;
+}
+
+div.gear-right {
+  width: 40%;
+}
+
+div.gear-left p, div.gear-right p {
+  width: 100%;
+}
+
+div.gear-left p {
+  text-align: left;
+  padding-right: 12px;
+  width: fit-content;
+  border-top: 1px #E53567 dashed;
+  border-left: 1px #E53567 dashed;
+  padding-top: 5px;
+  padding-left: 16px;
+}
+
+div.gear-right p {
+  text-align: right;
+  width: fit-content;
+  border-bottom: 1px #E53567 dashed;
+  border-right: 1px #E53567 dashed;
+  padding-bottom: 5px;
+  padding-right: 16px;
+  float: right;
 }
 
 div.grid-odd, div.grid-even {
@@ -687,9 +736,9 @@ div.grid-odd, div.grid-even {
   margin: auto;
 }
 
-div.grid-odd p, div.grid-even p {
+/*div.grid-odd p, div.grid-even p {
   max-width: 50%;
-}
+}*/
 
 div.crane-additional-notes, div.gear-content {
   width: 80%;
