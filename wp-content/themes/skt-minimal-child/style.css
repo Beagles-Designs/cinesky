@@ -118,7 +118,7 @@ a.quote-contact, h5, h2, h3.subtitle, h6 {
 
 a.quote-contact:before, h5:before, h2:before, h3.subtitle:before {
     position: absolute;
-    content: "|<";
+    content: "|";
     color: #E53567;
 }
 
@@ -169,7 +169,7 @@ section.site-main h2:after {
 
 a.quote-contact:after, h5:after, h2:after, h3.subtitle:after {
     position: absolute;
-    content: ">|";
+    content: "|";
     bottom: -9px;
     color: #E53567;
 }
