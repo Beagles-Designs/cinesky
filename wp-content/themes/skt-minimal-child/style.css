@@ -370,6 +370,7 @@ ul.homepage-crane-types {
     grid-gap: 30px;
     margin: 0;
     justify-items: stretch;
+    width: 90%;
 }
 
 ul.homepage-crane-types li::before{
@@ -382,6 +383,7 @@ ul.homepage-crane-types li::before{
 li.gear-individual {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .gear-title {
@@ -523,17 +525,38 @@ div.button-div a {
 
 ul#menu-gear_subsection {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-around;
 
 }
 
 ul#menu-gear_subsection li {
-  width:  33%;
+  width:  100%;
   text-align: center;
+  padding: 10px;
+}
+
+nav.gear-menu-navigation ul li a:hover {
+  color: #E53567;
 }
 
 nav.gear-menu-navigation ul li a span {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
+}
+
+nav.gear-menu-navigation ul li a span:before {
+    content: "•";
+    color: #E53567;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+nav.gear-menu-navigation ul li a span:after {
+    content: "•";
+    color: #E53567;
+    font-size: 25px;
+    vertical-align: middle;
 }
 
 div.sticky-email {
@@ -1087,6 +1110,20 @@ div.footer-logo {
   div#homepage-headline-clear h2:after {
     margin-left: 40px;
   }
+}
+
+@media screen and (min-width: 600px) {
+
+    ul#menu-gear_subsection {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+    ul#menu-gear_subsection li {
+    width:  33%;
+  }
+
 }
 
 @media screen and (min-width: 620px) {
@@ -1960,6 +1997,7 @@ div.homepage-crane-options h5:before {
 
   div.services-boom-graphic {
     left: -92px;
+    top: 7%;
 }
 
   h6 {
