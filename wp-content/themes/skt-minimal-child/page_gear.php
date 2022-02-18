@@ -13,7 +13,6 @@ get_header(); ?>
                         ?>
                     <div class='maxwidth'>        
         				<h2>Gear</h2>
-                        <h3>Jump to Section</h3>
                         <nav class="gear-menu-navigation">
                             <?php wp_nav_menu( array( 'theme_location' => 'gear-subsection', 'menu_class' => 'gear-subsection', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
                         </nav> 
@@ -21,7 +20,7 @@ get_header(); ?>
                      
                 <?php endwhile; // end of the loop. ?>  
         </section> 
-        <?php  $gear_image_url = get_field('gear_image', 81); ?>       
+        <?php $gear_image_url = get_field('gear_image', 81); ?>       
             <div class="crane-image" style='background-image:url(<?php echo $gear_image_url; ?>); background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed;'>
             </div>    
         <div class="gear-crane-container maxwidth" id="crane-section">
@@ -73,7 +72,7 @@ get_header(); ?>
                 </ul>
             </div>
         <div id="gear-email-tag-container" class='maxwidth'>    
-            <h3>Call or Email to discuss your specific needs.</h3>
+            <h3>Call or email to discuss your specific needs</h3>
             <div class="button-div"> 
                 <?php 
                     $email = get_field("main_email", 325);
@@ -85,13 +84,7 @@ get_header(); ?>
         
   
         <div class="sticky-email">
-                    <button class="popmake-227" onclick="emailToggle()"><i class="fas fa-envelope"></i><i class="fas fa-angle-up"></i></button>
-                    <div id="popup-email">
-                        <p>Call or email to discuss your specific needs</p>
-                           
-                            <a class='button' href="mailto:<?php echo $email ?>?subject=<?php echo $newsubject ?>"><button class="popmake-227"><i class="fas fa-envelope"></i></button></a>
-                        
-                    </div>
+                    <a class='button' href="mailto:<?php echo $email ?>?subject=<?php echo $newsubject ?>"><button><i class="fas fa-envelope"></i></button></a>
         </div>
         <div id='gear-spacer'></div>
     </div><!-- page_content -->

@@ -118,7 +118,7 @@ a.quote-contact, h5, h2, h3.subtitle, h6 {
 
 a.quote-contact:before, h5:before, h2:before, h3.subtitle:before {
     position: absolute;
-    content: "|";
+    content: "|<";
     color: #E53567;
 }
 
@@ -169,7 +169,7 @@ section.site-main h2:after {
 
 a.quote-contact:after, h5:after, h2:after, h3.subtitle:after {
     position: absolute;
-    content: "|";
+    content: ">|";
     bottom: -9px;
     color: #E53567;
 }
@@ -337,15 +337,15 @@ div .homepage-headline-container a {
 }
 
 div.boom-travel-graphic img{
-    width: 100%;
+    width: 20vw;
     height: auto;
-    max-width: 105px;
+    max-width: 280px;
 }
 
 div.head-rotation-graphic img{
-    width: 100%;
+    width: 14vw;
     height: auto;
-    max-width: 73px;
+    max-width: 145px;
 }
 
 div.crane-hero-image {
@@ -410,9 +410,20 @@ p#hp-gear-link, p#hp-gear-link a {
 p#hp-gear-link a {
     font-weight: medium;
     position: relative;
-    border-bottom: 1px solid #E53567;
     padding-bottom: 2px;
 }
+
+p#hp-gear-link a:before {
+  content: "•";
+  color: #E53567;
+  font-size: 2.5rem;
+  vertical-align: middle;
+}
+
+p#hp-gear-link a:hover {
+  color: #E53567;
+}
+
 
 section.crane-hero-content {
     display: flex;
@@ -492,8 +503,9 @@ h3#unique {
 div.button-div {
      background-color: #E53567;
     border: .5px black solid;
-    width: 200px;
+    width: fit-content;
     height: 50px;
+    padding: 10px;
     margin:  20px auto 50px auto;
     display: flex;
     align-items: center;
@@ -503,7 +515,7 @@ div.button-div {
 
 div.button-div a {
     font-weight: medium;
-    font-size: 1.5em;
+    font-size: 1rem;
 }   
 
 /* ------ GEAR PAGE CONTENT      ------------ */ 
@@ -518,6 +530,10 @@ ul#menu-gear_subsection {
 ul#menu-gear_subsection li {
   width:  33%;
   text-align: center;
+}
+
+nav.gear-menu-navigation ul li a span {
+  font-size: 1.25rem;
 }
 
 div.sticky-email {
@@ -793,9 +809,9 @@ section.services-closing {
 /* Mobile Portrait View */
 
 @media screen and (max-width:480px) {
-  div.boom-travel-graphic img {
+ /* div.boom-travel-graphic img {
     max-width: 80px;
-  }
+  }*/
 
   div.services-boom-graphic img {
     max-width: 120px;
@@ -1094,7 +1110,7 @@ h1 {
   text-align: center;
   font-size: 2.6rem;
   width: 85%;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -1104,7 +1120,7 @@ h2 {
 
 
 p {
-  font-size: 1.75rem;
+  font-size: 1.125rem;
 }
 
 h2:before {
@@ -1220,9 +1236,9 @@ div.homepage-headline-container {
    top: 80%;
 }
 
-div#homepage-headline-clear div.boom-travel-graphic img {      
+/*div#homepage-headline-clear div.boom-travel-graphic img {      
   max-width: 150px;
-}
+}*/
 
 div.homepage-headline-container h2 {
   max-width: 80%;
@@ -1331,8 +1347,19 @@ h3#unique {
   font-size: 2rem;
 }
 
+div.button-div a {
+  font-size: 1.125rem;
+}
+
 /* ------ Gear Page Tablet Settings   ------ */ 
 
+nav.gear-menu-navigation {
+  padding-bottom: 50px;
+}
+
+nav.gear-menu-navigation ul li a span {
+  font-size: 1.5rem;
+}
 
 div.theme-151 {
   position: absolute!important;
@@ -1389,9 +1416,9 @@ div.services-boom-graphic {
   left: -81px;
 }
 
-div.boom-travel-graphic img {      /*------- ADJUST TO EFFECT JUST SERVICES IMG BACK TO 200PX   ------ */
+/*div.boom-travel-graphic img {      ------- ADJUST TO EFFECT JUST SERVICES IMG BACK TO 200PX   ------ 
   max-width: 150px;
-}
+}*/
 
 div#services-headline-clear {
   padding: 30px 0;
@@ -1489,6 +1516,7 @@ ul.similar-list-main li div p.text-left, ul.similar-list-main li div p.text-righ
   .homepage-hero-container {
     min-height: 700px;
   }
+
 }
 
 @media screen and (max-width:1169px) and (min-width:768px) {
@@ -1779,7 +1807,7 @@ div.footer-contact p {
   }
 
   p {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 
   section.site-main h2:before {
@@ -1807,10 +1835,6 @@ section.services-closing {
     margin: 100px auto 50px auto;
 }
 
-section.services-closing p {
-  font-size: 1.5rem;
-}
-
 
 /* ---- Desktop Homepage Settings ---*/
 
@@ -1825,7 +1849,7 @@ section.services-closing p {
 
   .boom-travel-graphic {
     top: 0%;
-    left: 49px;
+    left: -21px;
   }
 
   .head-rotation-graphic {
@@ -1900,11 +1924,6 @@ div.homepage-crane-options h5:before {
     margin-left: auto;
     margin-right: auto;
     font-weight: normal;
-  }
-
-  p#hp-gear-link a {
-    border-bottom: 2px solid #E53567;
-
   }
 
   section.project-types {

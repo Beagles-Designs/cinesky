@@ -138,7 +138,10 @@ get_header(); ?>
                     <a class='button' href="mailto:<?php echo $email ?>?subject=<?php echo $newsubject ?>">Email Now</a>
                 </div>
             </section>   
-   
+        <div class="sticky-email">
+                    <a class='button' href="mailto:<?php echo $email ?>?subject=<?php echo $newsubject ?>"><button><i class="fas fa-envelope"></i></button></a>
+        </div>
+        <div id='gear-spacer'></div>
         </div><!-- .main-content -->
     </div><!-- #primary -->
 

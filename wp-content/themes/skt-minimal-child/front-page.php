@@ -88,7 +88,7 @@ get_header(); ?>
                 <?php endwhile; ?>      
             </ul>
         </div>    
-        <p id="hp-gear-link"><a href="gear">Click Here </a>for our full gear list, additional items and spcifications.</p>
+        <p id="hp-gear-link"><a href="gear">CLICK HERE</a> for our full gear list, additional items and specifications.</p>
     </div>
       
 </section>
@@ -117,8 +117,8 @@ get_header(); ?>
                 <?php endwhile; ?>
             <?php wp_reset_query(); ?>         
         </ul>
-        <h3 id="unique">Every project is unique.</h3>
-        <p>Call or email for a quote to meet your project's needs.</p>
+        <h3 id="unique">Every project is unique</h3>
+        <p>Call or email for a quote to meet your project's needs</p>
         <div class='button-div'>
             <?php while (have_posts()) : the_post(); 
                     $email = get_field("main_email", 325);
