@@ -88,7 +88,7 @@ get_header(); ?>
                 <?php endwhile; ?>      
             </ul>
         </div>    
-        <p id="hp-gear-link"><a href="gear">CLICK HERE</a> for our full gear list, additional items and specifications.</p>
+        <p id="hp-gear-link"><a href="gear#crane-section">CLICK HERE</a> for our full gear list, additional items and specifications.</p>
     </div>
       
 </section>
