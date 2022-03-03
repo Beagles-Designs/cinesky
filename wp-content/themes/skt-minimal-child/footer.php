@@ -30,7 +30,7 @@
                   ?>
             <?php endwhile; ?>      
             <p>CONTACT</p>
-            <p id="footer-phone">(310) 920-1502 </p>
+            <p id="footer-phone">310.920.1502 </p>
             <a href="mailto:<?php echo $email ?>?subject=<?php echo $newsubject ?>"><?php echo $email ?></a>
              
           </div>
