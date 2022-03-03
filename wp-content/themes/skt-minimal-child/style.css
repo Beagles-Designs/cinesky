@@ -9,7 +9,11 @@ Version:      1.0.0
 Tags:   two-columns,right-sidebar,full-width-template,custom-background,custom-colors,custom-menu,sticky-post,theme-options,threaded-comments,featured-images,footer-widgets,translation-ready,rtl-language-support,custom-logo,editor-style,custom-header,portfolio  	
 Text Domain:  cinesky-theme
 
-Cinesky Theme is based on SKT Minimal theme(SKT Minimal 2021 is distributed under the terms of the GNU GPL v2 or later).
+Cinesky Theme is based on SKT Minimal theme(SKT Minimal 2021 is distributed under the terms of the GNU GPL v2 or later). */
+
+
+
+
 
 /*  ------ General Page Settings ------ */
 
@@ -159,11 +163,17 @@ footer.site-footer {
   border-top: 1px #E53567 dashed;
 }
 
+div.footer-wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
 
 div.site-info {
     display: flex;
     flex-direction: row;
     margin: auto;
+    width: 100%;
     
 }
 
@@ -240,8 +250,13 @@ div#copyright-area p {
     position: relative;
 }
 
+div.homepage-hero-container {
+  position: relative;
+}
+
 div.homepage-headline-container {
-    position: absolute; top: 56%;
+    position: absolute; 
+    top: 10%;
     background-color: white;
     padding: 30px 0;
     width: 100%;
@@ -284,7 +299,7 @@ div .homepage-headline-container a {
 }
 
 .head-rotation-graphic {
-  bottom: -12%;
+  bottom: 0;
   right: 0;
 }
 
@@ -601,6 +616,14 @@ li.gear2 button {
   background-color: #58595B;
 }
 
+li.gear1 button:hover {
+  color: #58595B;
+}
+
+li.gear2 button:hover {
+  color: #E53567;
+}
+
 div#gear-email-tag-container {
   display: none;
 }
@@ -753,6 +776,7 @@ div#dashed-line-2 {
     width: 6vw;
     left: 6vw;
     z-index: -1;
+    max-width: 800px;
 }
 
 div#dashed-line-3 {
@@ -764,6 +788,7 @@ div#dashed-line-3 {
     width: 26vw;
     left: 6vw;
     z-index: -1;
+    max-width: 900px;
 }
 
 div#similar-aside-top-bar {
@@ -1170,7 +1195,7 @@ body.wp-custom-logo .logo {
 
 div.homepage-headline-container {
    padding: 50px 0;
-   top: 80%;
+   top: 20%;
 }
 
 
@@ -1248,7 +1273,7 @@ li.featured-work-individual figure a img {
 }
 
 div.project-caption {
-  height: 100px;
+  height: 120px;
 }
 
 div.project-caption h3 {
@@ -1750,7 +1775,6 @@ section.services-closing {
   }
 
   div.homepage-headline-container {
-    top: 75%;
     padding: 50px 0;
   }
 
@@ -2000,3 +2024,4 @@ div.crane-image {
   }
 
 } /* -- end Large Screen Adjustements -- */ 
+
