@@ -27,15 +27,19 @@ get_header(); ?>
                 <div class="homepage-hero-container parallax" style='background-image:url(<?php echo $hero_image_url; ?>); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center;'>
                         <div class="homepage-headline-container parallax-content">
                             <div id="homepage-headline-clear">
+                                <?php  
+                                    $email = get_field("main_email", 325);
+                                    $newsubject = get_field("subject_text", 325);
+                                 ?>
                                 <div class="boom-travel-graphic">
                                     <?php echo wp_get_attachment_image($boom_travel_url, $size); ?>
                                 </div>
                                 <h2>To craft shots that compel and engage;</br>to surpass expectations</h2>
-                                <a class="quote-contact" href="mailto:sarah.e.beagle@gmail.com?subject=Interested Production for a Cinesky Quote">  Email us for a Quote Today  </a>
+                                <a class="quote-contact" target="_blank" href="mailto:<?php echo $email ?>?subject=<?php echo $newsubject ?>">  Email us for a Quote Today  </a>
                                 <div class="head-rotation-graphic">
                                     <?php echo wp_get_attachment_image($head_rotation, $size); ?>
                                 </div>
-                            </div>    
+                            </div>   
                         </div>   
                 </div>
             <?php endwhile; // end of the loop. ?>

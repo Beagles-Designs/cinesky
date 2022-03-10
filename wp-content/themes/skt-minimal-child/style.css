@@ -214,6 +214,10 @@ ul#menu-footer_menu li {
   padding: 5px 0;
 }
 
+ul#menu-footer_menu li a span:hover {
+    color: #E53567;
+}
+
 div#copyright-area {
   text-align: center;
   border-top: 1px black solid;
@@ -318,6 +322,7 @@ div.head-rotation-graphic img{
 div.crane-hero-image {
     width: auto;
     min-height: 238px;
+    border-top: 25px white solid;
 }
 
 div.homepage-crane-options {
@@ -1222,6 +1227,7 @@ a.quote-contact:after {
 
 div.crane-hero-image {
   min-height: 513px;
+  border-top: 30px white solid;
 }
 
 section.crane-hero-content {
@@ -1771,7 +1777,7 @@ section.services-closing {
 /* ---- Desktop Homepage Settings ---*/
 
   .homepage-hero-container {
-    min-height: 750px;
+    min-height: 900px;
   }
 
   div.homepage-headline-container {
@@ -1807,6 +1813,7 @@ section.services-closing {
 
   div.crane-hero-image {
     min-height: 650px;
+    border-top: 50px white solid;
   }
 
   div.homepage-crane-options {
