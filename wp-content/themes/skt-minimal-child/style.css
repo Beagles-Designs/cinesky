@@ -45,7 +45,7 @@ body {
     color: black;
 }
 
-header, h1, div#homepage-headline-clear, div#services-headline-clear, section.project-types, div.site-info, div.maxwidth {
+header, h1, div#homepage-headline-clear, section.project-types, div.site-info, div.maxwidth {
   max-width: 1300px;
 }
 
@@ -266,7 +266,7 @@ div.homepage-headline-container {
     width: 100%;
 }
 
-div#homepage-headline-clear, div#services-headline-clear {
+div#homepage-headline-clear {
   position: relative;
   width: 100%;
   display: flex;
@@ -274,6 +274,16 @@ div#homepage-headline-clear, div#services-headline-clear {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin: auto;
+}
+
+div#services-headline-clear {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   margin: auto;
 }
 
@@ -692,7 +702,26 @@ div#gear-spacer {
 
 div#services-headline-clear {
   padding: 30px 0 15px 0;
-  border-bottom: 1px #E53567 dashed;
+}
+
+div.services-header { 
+    text-align: center;
+    max-width: 1300px;
+    margin: 0 auto 30px auto;
+  }
+
+div.services-hero-image {
+  min-height: 500px;
+}
+
+div.services-subtitle-container {
+  position: absolute;
+  top: 10%;
+  background-color: white;
+}
+
+p#experience {
+  margin-top: 30px;
 }
 
 div.services-boom-graphic {
@@ -702,6 +731,7 @@ div.services-boom-graphic {
 
 section.reel-section {
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .reel-section p {
@@ -1355,6 +1385,19 @@ div#gear-email-tag-container {
 
 /*---- Services Page Tablet Settings -------*/ 
 
+div.services-header { 
+    margin: 0 auto 40px auto;
+  }
+
+div.services-hero-image {
+  min-height: 830px;
+}
+
+div.services-subtitle-container {
+  padding: 50px 0;
+  top: 12%;
+}
+
 div#services-headline-clear p {
   font-size: 1,75rem;
   padding: 10px 0;
@@ -1869,6 +1912,22 @@ section.services-closing {
 
 
 /* ---> Services Desktop Settings */
+
+  div.services-header { 
+    margin: 0 auto 50px auto;
+  }
+
+  div.services-subtitle-container {
+    top: 12%;
+  }
+
+  div.services-hero-image {
+  min-height: 1000px;
+}
+
+  section.reel-section {
+    margin-top: 50px;
+  }
 
    .reel-section p {
     max-width: 40%;

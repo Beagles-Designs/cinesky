@@ -17,35 +17,37 @@
 get_header(); ?>
 
     <div id="primary" class="site-content sidebar">
-        <div class="services-main-content" role="main">
-            <section class="services-intro-content">
-                <?php while ( have_posts()) : the_post();  ?>   
-                    <?php  
-                        $boom_travel_url = get_field('boom_graphic', 111);
-                    ?> 
-                    <h2>Project Types</h2>
+         <?php  
+            $boom_travel_url = get_field('boom_graphic', 111);
+            $services_image_url = get_field('services_hero_image');
+        ?>      
+                <div class="services-header">
+                    <h2>Projects</h2>    
                     <p class="services-tagline">You bring the vision,</p>
                     <p class="services-tagline">We'll provide the execution. </p>
-                    <div id="services-headline-clear">    
-                        <div class="boom-travel-graphic services-boom-graphic">
-                            <img src="<?php echo $boom_travel_url; ?>">
-                        </div>
-                        <p>Live Events</p>
-                        <p>Concerts</p>
-                        <p>Sports</p>
-                        <p>Music Videos</p>
-                        <p>Narrative</p>
-                        <p>Feature Films</p>
-                        <p>Digital Content</p>
-                    </div>    
-                <?php endwhile ?>    
-            </section>
+                </div> 
+                <div class="homepage-hero-container parallax services-hero-image" style='background-image:url(<?php echo $services_image_url; ?>); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center;'>
+                    <div class="services-subtitle-container" id="services-headline-clear">
+                        <div class="maxwidth">    
+                            <div class="boom-travel-graphic services-boom-graphic">
+                                <img src="<?php echo $boom_travel_url; ?>">
+                            </div>
+                            <p>Live Events</p>
+                            <p>Concerts</p>
+                            <p>Sports</p>
+                            <p>Music Videos</p>
+                            <p>Narrative</p>
+                            <p>Feature Films</p>
+                            <p>Digital Content</p>
+                            <p id="experience">We have years of experience and technical expertise in a broad range of productions. Look at some of ours and reach out to discuss yours.</p>
+                        </div>    
+                    </div>      
+                </div>    
 
-            <section class="reel-section site-content">
-                <p>We have years of experience and technical expertise in a broad range of productions. Look at some of ours and reach out to discuss yours.</p>
+            <section class="reel-section site-content">   
                     <?php the_content(); ?>
             </section>        
-
+        <div class="services-main-content">
             <section class="past-projects-main">
                 <h3 class="subtitle">Past Projects</h3>
                 <ul class="past-projects-content">
