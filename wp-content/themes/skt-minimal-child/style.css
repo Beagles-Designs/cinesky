@@ -78,10 +78,12 @@ h2 {
   margin-bottom: 30px;
 }
 
-h2#craft {
+h2#craft, h2#homepage-project-h2 {
   color: black;
   text-shadow: none;
 }
+
+
 
 h3 {
   font-size: 1.5rem;
