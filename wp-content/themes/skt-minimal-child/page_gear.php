@@ -7,21 +7,21 @@
 get_header(); ?>
 <div class="container">
      <div id="site-content">		
-     <div class="page_content">  
-        <section class="gear-top site-main">            
-                <?php while ( have_posts() ) : the_post();
-                        ?>
-                    <div class='maxwidth'>        
-        				<h2>Gear</h2>
-                        <nav class="gear-menu-navigation">
-                            <?php wp_nav_menu( array( 'theme_location' => 'gear-subsection', 'menu_class' => 'gear-subsection', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
-                        </nav> 
-                    </div>    
-                     
-                <?php endwhile; // end of the loop. ?>  
-        </section> 
+     <div class="page_content">    
         <?php $gear_image_url = get_field('gear_image', 81); ?>       
             <div class="crane-image" style='background-image:url(<?php echo $gear_image_url; ?>); background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed;'>
+                <section class="gear-top site-main">            
+                        <?php while ( have_posts() ) : the_post();
+                                ?>
+                            <div class='maxwidth'>        
+                                <h2>Gear</h2>
+                                <nav class="gear-menu-navigation">
+                                    <?php wp_nav_menu( array( 'theme_location' => 'gear-subsection', 'menu_class' => 'gear-subsection', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+                                </nav> 
+                            </div>    
+                             
+                        <?php endwhile; // end of the loop. ?>  
+                </section>
             </div>    
         <div class="gear-crane-container maxwidth" id="crane-section">
             <h3 class="subtitle">Cranes</h3>

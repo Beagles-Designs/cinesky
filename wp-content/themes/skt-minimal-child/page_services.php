@@ -21,28 +21,29 @@ get_header(); ?>
             $boom_travel_url = get_field('boom_graphic', 111);
             $services_image_url = get_field('services_hero_image');
         ?>      
-                <div class="services-header">
-                    <h2>Projects</h2>    
-                    <p class="services-tagline">You bring the vision,</p>
-                    <p class="services-tagline">We'll provide the execution. </p>
-                </div> 
+                 
                 <div class="homepage-hero-container parallax services-hero-image" style='background-image:url(<?php echo $services_image_url; ?>); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center;'>
-                    <div class="services-subtitle-container" id="services-headline-clear">
-                        <div class="maxwidth">    
-                            <div class="boom-travel-graphic services-boom-graphic">
-                                <img src="<?php echo $boom_travel_url; ?>">
-                            </div>
-                            <p>Live Events</p>
-                            <p>Concerts</p>
-                            <p>Sports</p>
-                            <p>Music Videos</p>
-                            <p>Narrative</p>
-                            <p>Feature Films</p>
-                            <p>Digital Content</p>
-                            <p id="experience">We have years of experience and technical expertise in a broad range of productions. Look at some of ours and reach out to discuss yours.</p>
-                        </div>    
-                    </div>      
+                    <div class="services-header">
+                        <h2>Projects</h2>    
+                        <p class="services-tagline">You bring the vision,</p>
+                        <p class="services-tagline">We'll provide the execution. </p>
+                    </div>
                 </div>    
+            <div class="services-subtitle-container" id="services-headline-clear">
+                <div class="maxwidth">    
+                    <div class="boom-travel-graphic services-boom-graphic">
+                        <img src="<?php echo $boom_travel_url; ?>">
+                    </div>
+                    <p>Live Events</p>
+                    <p>Concerts</p>
+                    <p>Sports</p>
+                    <p>Music Videos</p>
+                    <p>Narrative</p>
+                    <p>Feature Films</p>
+                    <p>Digital Content</p>
+                    <p id="experience">We have years of experience and technical expertise in a broad range of productions. Look at some of ours and reach out to discuss yours.</p>
+                </div>    
+            </div>      
 
             <section class="reel-section site-content">   
                     <?php the_content(); ?>

@@ -30,10 +30,10 @@ Cinesky Theme is based on SKT Minimal theme(SKT Minimal 2021 is distributed unde
   float: none;
 }
 
-
-div#primary {
-    margin-top: 40px;
+.page_content {
+  padding: 0;
 }
+
 
 .main-content {
     width: 100%;
@@ -66,11 +66,21 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto 20px auto;
 }
 
+h1, h2 {
+  color: white;
+  padding: 30px 0;
+  text-shadow: -1px -1px 1px rgb(255 255 255 / 10%), 1px 1px 1px rgb(0 0 0 / 50%);
+}
+
 h2 {
-  padding: 0 10px;
   font-weight: medium;
   font-size: 2.6rem;
   margin-bottom: 30px;
+}
+
+h2#craft {
+  color: black;
+  text-shadow: none;
 }
 
 h3 {
@@ -105,6 +115,8 @@ h6 {
 p.services-tagline {
   font-size: 1.75rem;
   padding: 10px 0;
+  color: white;
+  text-shadow: -1px -1px 1px rgb(255 255 255 / 10%), 1px 1px 1px rgb(0 0 0 / 50%);
 }
 
 ul {
@@ -242,7 +254,7 @@ div#copyright-area p {
 
 .homepage-hero-container {
     height: auto;
-    min-height: 434px;
+    min-height: 650px;
     width: 100%;
     margin: 0 auto 0 auto;
 }
@@ -260,7 +272,7 @@ div.homepage-hero-container {
 
 div.homepage-headline-container {
     position: absolute; 
-    top: 10%;
+    top: 30%;
     background-color: white;
     padding: 30px 0;
     width: 100%;
@@ -284,7 +296,8 @@ div#services-headline-clear {
     flex-direction: column;
     align-items: center;
     text-align: center;
-  margin: auto;
+    margin: auto;
+    position: relative;
 }
 
 div.homepage-headline-container h2 {
@@ -525,6 +538,8 @@ nav.gear-menu-navigation ul li a:hover {
 
 nav.gear-menu-navigation ul li a span {
   font-size: 1.125rem;
+  color: white;
+  text-shadow: -1px -1px 1px rgb(255 255 255 / 10%), 1px 1px 1px rgb(0 0 0 / 50%);
 }
 
 nav.gear-menu-navigation ul li a span:before {
@@ -586,7 +601,7 @@ nav.gear-menu-navigation {
 div.crane-image {
   width: 100vw;
   height: auto;
-  min-height: 300px;
+  min-height: 450px;
 }
 
 .gear-crane-container, .gear-additions-container, .gear-heads-container {
@@ -702,12 +717,14 @@ div#gear-spacer {
 
 div#services-headline-clear {
   padding: 30px 0 15px 0;
+
 }
 
 div.services-header { 
     text-align: center;
     max-width: 1300px;
     margin: 0 auto 30px auto;
+    width: 90%;
   }
 
 div.services-hero-image {
@@ -715,8 +732,6 @@ div.services-hero-image {
 }
 
 div.services-subtitle-container {
-  position: absolute;
-  top: 10%;
   background-color: white;
 }
 
@@ -726,7 +741,6 @@ p#experience {
 
 div.services-boom-graphic {
   top: 23%;
-  left: -35px;
 }
 
 section.reel-section {
@@ -981,9 +995,7 @@ section.services-closing {
     float: none;
     text-align: center;
   }
-  body.home .page_content {
-    padding: 50px 0;
-  }
+
   .col-columns-2 {
     width: 100%;
     padding: 25px 15px;
@@ -1111,20 +1123,19 @@ div.footer-logo {
 
 /* ------ Main Changes ------------ */
 
-h1, h2 {
-  font-weight: bold;
-}
 
 h1 {
   text-align: center;
   font-size: 2.6rem;
   width: 85%;
   margin-bottom: 30px;
+  padding-top: 40px;
 }
 
 h2 {
   font-size: 1.5rem;
   line-height: 1.5rem;
+  padding-top: 40px;
 }
 
 
@@ -1225,12 +1236,12 @@ body.wp-custom-logo .logo {
 
 
 .homepage-hero-container {
-  min-height: 600px;
+  min-height: 750px;
 }
 
 div.homepage-headline-container {
    padding: 50px 0;
-   top: 20%;
+   top: 30%;
 }
 
 
@@ -1280,7 +1291,6 @@ section.project-types {
 h2 {
   font-size: 2.6rem;
   margin-bottom: 50px;
-  padding: 10px;
 }
 
 
@@ -1330,6 +1340,11 @@ div.button-div a {
 }
 
 /* ------ Gear Page Tablet Settings   ------ */ 
+
+div.crane-image {
+  min-height: 550px;
+}
+
 
 nav.gear-menu-navigation {
   padding-bottom: 50px;
@@ -1390,7 +1405,7 @@ div.services-header {
   }
 
 div.services-hero-image {
-  min-height: 830px;
+  min-height: 550px;
 }
 
 div.services-subtitle-container {
@@ -1403,13 +1418,6 @@ div#services-headline-clear p {
   padding: 10px 0;
 }
 
-div.services-boom-graphic {
-  left: -81px;
-}
-
-/*div.boom-travel-graphic img {      ------- ADJUST TO EFFECT JUST SERVICES IMG BACK TO 200PX   ------ 
-  max-width: 150px;
-}*/
 
 div#services-headline-clear {
   padding: 30px 0;
@@ -1783,13 +1791,14 @@ div.footer-contact p {
     font-size: 3.5rem;
     max-width: 75%;
     text-align: center;
-    font-weight: bold;
     margin-bottom: 50px;
+    padding-top: 50px;
   }
 
   h2 {
     font-size: 3.75rem;
-    padding: 15px;
+    padding-bottom: 15px;
+    padding-top: 50px;
   }
 
   h3.subtitle {
@@ -1820,11 +1829,12 @@ section.services-closing {
 /* ---- Desktop Homepage Settings ---*/
 
   .homepage-hero-container {
-    min-height: 900px;
+    min-height: 1075px;
   }
 
   div.homepage-headline-container {
     padding: 50px 0;
+    top: 25%;
   }
 
   .boom-travel-graphic {
@@ -1917,12 +1927,12 @@ section.services-closing {
     margin: 0 auto 50px auto;
   }
 
-  div.services-subtitle-container {
-    top: 12%;
+  div#services-headline-clear {
+    padding: 50px 0;
   }
 
   div.services-hero-image {
-  min-height: 1000px;
+  min-height: 650px;
 }
 
   section.reel-section {
@@ -1934,8 +1944,8 @@ section.services-closing {
   }
 
   div.services-boom-graphic {
-    left: -92px;
-    top: 7%;
+    left: -44px;
+    top: 10%;
 }
 
   h6 {
@@ -1962,7 +1972,7 @@ section.services-closing {
 /* ------ Gear Page Adjustements ------ */
 
 div.crane-image {
-  min-height: 550px;
+  min-height: 650px;
 }
 
 } /* ---> End Desktop General Settings */

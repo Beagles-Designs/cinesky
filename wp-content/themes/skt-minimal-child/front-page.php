@@ -23,8 +23,8 @@ get_header(); ?>
                     $head_rotation  = get_field('head_rotation');
                     $size = 'full';
                 ?> 
-                <h1>Adding Unparalleled Production Value with Every Shot</h1>
                 <div class="homepage-hero-container parallax" style='background-image:url(<?php echo $hero_image_url; ?>); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center;'>
+                        <h1>Adding Unparalleled Production Value with Every Shot</h1>
                         <div class="homepage-headline-container parallax-content">
                             <div id="homepage-headline-clear">
                                 <?php  
@@ -34,7 +34,7 @@ get_header(); ?>
                                 <div class="boom-travel-graphic">
                                     <?php echo wp_get_attachment_image($boom_travel_url, $size); ?>
                                 </div>
-                                <h2>To craft shots that compel and engage;</br>to surpass expectations</h2>
+                                <h2 id="craft">To craft shots that compel and engage;</br>to surpass expectations</h2>
                                 <a class="quote-contact" target="_blank" href="mailto:<?php echo $email ?>?subject=<?php echo $newsubject ?>">  Email us for a Quote Today  </a>
                                 <div class="head-rotation-graphic">
                                     <?php echo wp_get_attachment_image($head_rotation, $size); ?>
