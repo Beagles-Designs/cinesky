@@ -256,7 +256,7 @@ div#copyright-area p {
 
 .homepage-hero-container {
     height: auto;
-    min-height: 650px;
+    min-height: 500px;
     width: 100%;
     margin: 0 auto 0 auto;
 }
@@ -273,8 +273,6 @@ div.homepage-hero-container {
 }
 
 div.homepage-headline-container {
-    position: absolute; 
-    top: 30%;
     background-color: white;
     padding: 30px 0;
     width: 100%;
@@ -1238,7 +1236,7 @@ body.wp-custom-logo .logo {
 
 
 .homepage-hero-container {
-  min-height: 750px;
+  min-height: 550px;
 }
 
 div.homepage-headline-container {
@@ -1513,12 +1511,12 @@ ul.similar-list-main li div p.text-left, ul.similar-list-main li div p.text-righ
 
 } /*  End Main Tablet Formatting */ 
 
-@media screen and (max-width: 1279px) and (min-width: 860px) {
+/*@media screen and (max-width: 1279px) and (min-width: 860px) {
   .homepage-hero-container {
     min-height: 700px;
   }
 
-}
+}*/
 
 @media screen and (max-width:1169px) and (min-width:768px) {
   * {
@@ -1831,7 +1829,7 @@ section.services-closing {
 /* ---- Desktop Homepage Settings ---*/
 
   .homepage-hero-container {
-    min-height: 1075px;
+    min-height: 650px;
   }
 
   div.homepage-headline-container {

@@ -24,8 +24,9 @@ get_header(); ?>
                     $size = 'full';
                 ?> 
                 <div class="homepage-hero-container parallax" style='background-image:url(<?php echo $hero_image_url; ?>); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center;'>
-                        <h1>Adding Unparalleled Production Value with Every Shot</h1>
-                        <div class="homepage-headline-container parallax-content">
+                        <h1>Adding Unparalleled Production Value with Every Shot</h1>             
+                </div>
+                <div class="homepage-headline-container parallax-content">
                             <div id="homepage-headline-clear">
                                 <?php  
                                     $email = get_field("main_email", 325);
@@ -41,7 +42,6 @@ get_header(); ?>
                                 </div>
                             </div>   
                         </div>   
-                </div>
             <?php endwhile; // end of the loop. ?>
         </div><!-- .main-content -->
     </div><!-- #primary -->
