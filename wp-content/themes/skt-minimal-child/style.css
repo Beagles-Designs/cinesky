@@ -43,6 +43,7 @@ Cinesky Theme is based on SKT Minimal theme(SKT Minimal 2021 is distributed unde
 body {
     font-family: "Futura";
     color: black;
+    width: 100vw;
 }
 
 header, h1, div#homepage-headline-clear, section.project-types, div.site-info, div.maxwidth {
