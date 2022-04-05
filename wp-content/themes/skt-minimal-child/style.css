@@ -1239,7 +1239,7 @@ body.wp-custom-logo .logo {
 
 .homepage-hero-container {
   min-height: 550px;
-  background-attachment: initial;
+  background-attachment: fixed;
 }
 
 div.homepage-headline-container {
