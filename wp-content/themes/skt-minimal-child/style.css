@@ -260,6 +260,7 @@ div#copyright-area p {
     width: 100%;
     margin: 0 auto 0 auto;
     max-height: 800px;
+    display: none;
 }
 
 .homepage-hero-container img{
