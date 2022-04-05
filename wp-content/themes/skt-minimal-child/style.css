@@ -604,6 +604,7 @@ div.crane-image {
   width: 100vw;
   height: auto;
   min-height: 450px;
+  background-attachment: scroll;
 }
 
 .gear-crane-container, .gear-additions-container, .gear-heads-container {
@@ -1346,6 +1347,7 @@ div.button-div a {
 
 div.crane-image {
   min-height: 550px;
+  background-attachment: fixed;
 }
 
 

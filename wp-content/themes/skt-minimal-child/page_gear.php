@@ -9,7 +9,7 @@ get_header(); ?>
      <div id="site-content">		
      <div class="page_content">    
         <?php $gear_image_url = get_field('gear_image', 81); ?>       
-            <div class="crane-image" style='background-image:url(<?php echo $gear_image_url; ?>); background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed;'>
+            <div class="crane-image" style='background-image:url(<?php echo $gear_image_url; ?>); background-size: cover; background-repeat: no-repeat; background-position: center;'>
                 <section class="gear-top site-main">            
                         <?php while ( have_posts() ) : the_post();
                                 ?>

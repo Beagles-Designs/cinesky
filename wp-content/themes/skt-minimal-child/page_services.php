@@ -22,7 +22,7 @@ get_header(); ?>
             $services_image_url = get_field('services_hero_image');
         ?>      
                  
-                <div class="homepage-hero-container parallax services-hero-image" style='background-image:url(<?php echo $services_image_url; ?>); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center;'>
+                <div class="homepage-hero-container parallax services-hero-image" style='background-image:url(<?php echo $services_image_url; ?>); background-size: cover; background-repeat: no-repeat; background-position: center;'>
                     <div class="services-header">
                         <h2>Projects</h2>    
                         <p class="services-tagline">You bring the vision,</p>
