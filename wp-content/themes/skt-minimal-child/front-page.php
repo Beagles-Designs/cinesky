@@ -23,7 +23,7 @@ get_header(); ?>
                     $head_rotation  = get_field('head_rotation');
                     $size = 'full';
                 ?> 
-                <div class="homepage-hero-container parallax" style='background-image:url(<?php echo $hero_image_url; ?>); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center;'>
+                <div class="homepage-hero-container parallax" style='background-image:url(<?php echo $hero_image_url; ?>); background-size: cover; background-repeat: no-repeat; background-position: center;'>
                         <h1>Adding Unparalleled Production Value with Every Shot</h1>             
                 </div>
                 <div class="homepage-headline-container parallax-content">

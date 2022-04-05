@@ -260,7 +260,7 @@ div#copyright-area p {
     min-height: 500px;
     width: 100%;
     margin: 0 auto 0 auto;
-    max-height: 800px;
+    background-attachment: scroll;
 }
 
 .homepage-hero-container img{
@@ -1239,6 +1239,7 @@ body.wp-custom-logo .logo {
 
 .homepage-hero-container {
   min-height: 550px;
+  background-attachment: initial;
 }
 
 div.homepage-headline-container {
